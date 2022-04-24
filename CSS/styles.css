@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
     /* box-sizing est appliqué à tous les éléments */
@@ -12,7 +13,7 @@ body {
 }
 
 
-/*HEADER LOGO NAV */
+/*LOGO (HEADER) */
 
 .container-logo {
     box-shadow: 0px 3px 5px rgb(29, 28, 28);
@@ -22,18 +23,14 @@ body {
     justify-content: center;
 }
 
-.background-localisation {
+
+/*LOCALISATION (HEADER) */
+
+.container-localisation {
     height: 60px;
     display: flex;
     align-items: center;
     background-color: #f2f2f2;
-}
-
-.container-localisation {
-    margin: 20px auto 20px auto;
-    width: 35%;
-    text-align: center;
-    position: relative;
 }
 
 .container-icone-localisation {
@@ -42,7 +39,14 @@ body {
     font-size: 20px;
 }
 
-.container-localisation p {
+.container-name-cities {
+    margin: 20px auto 20px auto;
+    width: 35%;
+    text-align: center;
+    position: relative;
+}
+
+.container-name-cities p {
     font-size: 20px;
     margin: 0;
 }

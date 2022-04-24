@@ -13,7 +13,7 @@ body {
 }
 
 
-/*LOGO (HEADER) */
+/*LOGO */
 
 .container-logo {
     box-shadow: 0px 3px 5px rgb(29, 28, 28);
@@ -24,7 +24,7 @@ body {
 }
 
 
-/*LOCALISATION (HEADER) */
+/*LOCALISATION */
 
 .container-localisation {
     height: 60px;
@@ -50,6 +50,40 @@ body {
     font-size: 20px;
     margin: 0;
 }
+
+ /* H1 p Button */
+
+ .container-H1-p-button {
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #d13434;
+ }
+
+ .container-H1-p-button h1 {
+    width: 80%;
+    font-size: 30px;
+    margin: 20px 0 0 0;
+ }
+
+ 
+ .container-H1-p-button p {
+    width: 90%;
+    font-size: 20px;
+    margin: 20px 0 0 0;
+ }
+
+ .button{
+    color: white;
+    background-color: violet;
+    font-size: 18px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 30px;
+    margin: 20px 0 0 0;
+ }
+
 
 
 /* RESTAURANTS (SECTION) */

@@ -231,4 +231,42 @@ section a {
     font-size: 22px;
 }
 
+.description_heart:hover{
+    color: pink;
+}
 
+
+ /* FOOTER */
+
+ footer {
+     background-color: grey;
+     color: white;
+     padding: 5% 3% 2% 3%;
+ }
+
+ .container-logo-liens-footer{
+     height: 200px;
+ }
+
+ footer a {
+    outline: none;
+    text-decoration: none;
+    color: white;
+}
+
+
+
+footer ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0;
+  }
+
+footer li {
+    margin-top: 10px;
+  }
+
+footer li i{
+    margin-right: 20px;
+    width: 10px;
+  }

@@ -40,7 +40,7 @@ body {
 /*LOGO */
 
 .container-logo {
-    box-shadow: 0px 3px 5px  var(--gris-moyen);
+    box-shadow: 0px 3px 5px var(--gris-moyen);
     height: 60px;
     display: flex;
     align-items: center;
@@ -51,7 +51,7 @@ body {
 /*LOCALISATION */
 
 .container-localisation {
-    height: 60px;
+    height: 51px;
     display: flex;
     align-items: center;
     background-color:  var(--gris-moyen);
@@ -71,14 +71,14 @@ body {
 }
 
 .container-name-cities p {
-    font-size: 20px;
+    font-size: 16px;
     margin: 0;
 }
 
  /* H1 p Button */
 
  .container-H1-p-button {
-    height: 260px;
+    height: 287px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -87,34 +87,41 @@ body {
  }
 
  .container-H1-p-button h1 {
-    width: 80%;
-    font-size: 30px;
-    margin: 20px 0 0 0;
+    width: 70%;
+    font-size: 25px;
+    margin: 43px 0 0 0;
  }
  
  .container-H1-p-button p {
     width: 90%;
-    font-size: 20px;
-    margin: 20px 0 0 0;
+    font-size: 19px;
+    margin: 9px 0 0 0;
+    color: var(--gris-fonce);
+   font-weight: 390;
  }
 
  .button{
     color: var(--white);
     background-color: var(--primaire);
-    font-size: 18px;
-    padding: 10px 20px 10px 20px;
+    font-size: 16px;
+    padding: 14px 20px 14px 20px;
     border-radius: 30px;
-    margin: 20px 0 0 0;
+    margin: 28px 0 0 0;
  }
 
  /* Fonctionnement   */
 
  .container-fonctionnement {
-    height: 360px;
+    height: 392px;
+ }
+
+
+ .container-fonctionnement h2{
+    margin: 49px 0 21px 20px;
  }
 
  .container-ETAPES { 
-        height: 260px;
+        height: 282px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -127,7 +134,7 @@ body {
      box-shadow: 0px 3px 5px var(--box-shadow);
      padding: 10px 30px 10px 30px;
      width: 85%;
-     height: 70px;
+     height: 75px;
      display: flex;
      align-items: center;
      border-radius: 20px;
@@ -139,7 +146,8 @@ body {
  }
  
  .container-etape p {
-    font-size: 20px;
+    font-size: 16px;
+    font-weight: 402;
     margin: 0;
 }
 

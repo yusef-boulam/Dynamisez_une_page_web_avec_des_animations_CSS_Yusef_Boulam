@@ -117,7 +117,7 @@ body {
 
 
  .container-fonctionnement h2{
-    margin: 49px 0 21px 20px;
+    margin: 49px 0 21px 23px;
  }
 
  .container-ETAPES { 
@@ -185,11 +185,11 @@ body {
 .section-restaurants {
     background-color: var(--gris-clair);
     width: 100%;
-    padding: 1% 3% 2% 3%;
+    padding: 1% 6% 2% 6%;
 }
 
 .section-restaurants h2 {
-    margin-top: 36px;
+    margin: 52px 0 21px 0;
 }
 
 .container-restaurants {
@@ -208,14 +208,14 @@ section a {
     width: 100%;
     border-radius: 15px;
     object-fit: cover;
-    margin: 0 0 4% 0;
+    margin: 0 0 20px 0;
     text-align: left;
     box-shadow: 0px 3px 5px var(--box-shadow);
     position: relative;
 }
 
 .card img {
-    height: 185px;
+    height: 176px;
     width: 100%;
     object-fit: cover;
     border-radius: 15px 15px 0 0;
@@ -223,8 +223,8 @@ section a {
 
 .card_container-nouveau {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 16px;
+    right: 10px;
     background-color: var(--vert-clair);
     width: 80px;
     height: 30px;
@@ -236,14 +236,15 @@ section a {
 .card_container-nouveau p {
     display: block;
     font-size: 15px;
+    font-weight: 401;
     margin: 0;
     color: var(--vert-fonce);
-    font-weight: bold;
 }
 
 .card_description {
     display: flex;
     justify-content: space-between;
+    height: 72px;
 }
 
 .description_heading-p {
@@ -254,19 +255,19 @@ section a {
 }
 
 .card_description h3 {
-    margin: 0 0 0 7%;
+    margin: 10px 0 0 7%;
     width: 100%;
 }
 
 .card_description p {
-    margin: 2% 0 3% 7%;
-    font-size: 13px;
-    font-weight: 300;
+    margin: 3% 0 3% 7%;
+    font-size: 17px;
 }
 
 .description_heart {
-    margin: 4% 7% 0 0;
-    font-size: 22px;
+    margin: 5% 7% 0 0;
+    font-size: 25px;
+    font-weight: 100;
 }
 
 .description_heart:hover{

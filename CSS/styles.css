@@ -47,6 +47,11 @@ body {
     justify-content: center;
 }
 
+.container-logo p{
+    font-family: 'Shrikhand', cursive;
+    font-size: 31px;
+    margin: 0;
+}
 
 /*LOCALISATION */
 
@@ -59,13 +64,14 @@ body {
 
 .container-icone-localisation {
     position: absolute;
-    left: -30px;
-    font-size: 20px;
+    left: -20px;
+    font-size: 17px;
 }
 
 .container-name-cities {
     margin: 20px auto 20px auto;
     width: 35%;
+    font-weight: 401;
     text-align: center;
     position: relative;
 }

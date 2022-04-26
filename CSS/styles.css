@@ -18,15 +18,16 @@ html {
 --primaire: #9356DC;
 --secondaire: #FF79DA;
 --tertiaire: #99E2D0;
---gris-fonce:#353535;
---gris-moyen: #EAEAEA;
---gris-clair: #F6F6F6;
---gris-icones:  #7E7E7E;
---violet-clair: #F5EDFF;
---vert-clair:#99E2D0 ;
---vert-fonce: #008766;
+--quaternaire:#F6F6F6;
+--background-location: #EAEAEA;
+--background-footer:#353535;
+--color-icones-etapes:#7E7E7E;
+--background-etape3: #F5EDFF;
+--background-nouveau:#99E2D0 ;
+--color-nouveau: #008766;
 --box-shadow: rgb(209, 208, 208);
---white: white;
+--color-text-primaire: black;
+--color-text-secondaire: white;
 }
 
 
@@ -40,7 +41,7 @@ body {
 /*LOGO */
 
 .container-logo {
-    box-shadow: 0px 3px 5px var(--gris-moyen);
+    box-shadow: 0px 3px 5px var(--box-shadow);
     height: 60px;
     display: flex;
     align-items: center;
@@ -55,14 +56,14 @@ body {
 
 /*LOCALISATION */
 
-.container-localisation {
+.container-location {
     height: 51px;
     display: flex;
     align-items: center;
-    background-color:  var(--gris-moyen);
+    background-color:  var(--background-location);
 }
 
-.container-icone-localisation {
+.container-icone-location {
     position: absolute;
     left: -20px;
     font-size: 17px;
@@ -89,7 +90,7 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color:  var(--gris-clair);
+    background-color:  var(--quaternaire);
  }
 
  .container-H1-p-button h1 {
@@ -102,7 +103,6 @@ body {
     width: 90%;
     font-size: 19px;
     margin: 9px 0 0 0;
-    color: var(--gris-fonce);
    font-weight: 390;
  }
 
@@ -136,7 +136,7 @@ body {
  }
 
  .container-etape {
-     background-color: var(--gris-clair);
+     background-color: var(--quaternaire);
      box-shadow: 0px 3px 5px var(--box-shadow);
      padding: 10px 30px 10px 30px;
      width: 85%;
@@ -148,7 +148,7 @@ body {
  }
 
  .etape-boutique {
-    background-color: var(--violet-clair);
+    background-color: var(--background-etape3);
  }
  
  .container-etape p {
@@ -161,7 +161,7 @@ body {
     margin-right: 20px;
     width: 30px;
     font-size: 18px;
-    color: var(--gris-icones);
+    color: var(--color-icones-etapes);
  }
 
  .icone-boutique {
@@ -183,13 +183,13 @@ body {
  .nombre-etape p{
     display: block;
     font-size: 15px;
-    color:  var(--white);
+    color:  var(--color-text-secondaire);
  }
 
 /* RESTAURANTS */
 
 .section-restaurants {
-    background-color: var(--gris-clair);
+    background-color: var(--quaternaire);
     width: 100%;
     padding: 1% 6% 2% 6%;
 }
@@ -207,7 +207,7 @@ body {
 section a {
     outline: none;
     text-decoration: none;
-    color: black;
+    color: var(--color-text-primaire);
 }
 
 .card {
@@ -231,7 +231,7 @@ section a {
     position: absolute;
     top: 16px;
     right: 10px;
-    background-color: var(--vert-clair);
+    background-color: var(--background-nouveau);
     width: 80px;
     height: 30px;
     display: flex;
@@ -244,7 +244,7 @@ section a {
     font-size: 15px;
     font-weight: 401;
     margin: 0;
-    color: var(--vert-fonce);
+    color: var(--color-nouveau);
 }
 
 .card_description {
@@ -283,7 +283,7 @@ section a {
  /* FOOTER */
 
  footer {
-     background-color: var(--gris-fonce);
+     background-color: var(--background-footer);
      color:  var(--white);
      padding: 5% 3% 2% 5%;
  }

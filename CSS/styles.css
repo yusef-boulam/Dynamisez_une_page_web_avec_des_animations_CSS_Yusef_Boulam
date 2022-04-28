@@ -19,6 +19,7 @@ html {
 --secondaire: #FF79DA;
 --tertiaire: #99E2D0;
 --quaternaire:#ececec;
+--background-card: white;
 --background-location: #dbdbdb;
 --background-footer:#353535;
 --color-icones-etapes:#7E7E7E;
@@ -198,7 +199,6 @@ body {
 
  .bars {
     font-size: 19px;
-    margin-left: 4px;
  }
 
  .icone-boutique {
@@ -214,17 +214,17 @@ body {
 
 /* RESTAURANTS */
 
-.section-restaurants {
+section {
     background-color: var(--quaternaire);
     width: 100%;
     padding: 1% 6% 2% 6%;
 }
 
-.section-restaurants h2 {
+section h2 {
     margin: 52px 0 21px 0;
 }
 
-.container-restaurants {
+.container-cards {
     display: flex;
     flex-direction: column;
     margin-bottom: 22px;
@@ -244,6 +244,7 @@ section a {
     text-align: left;
     box-shadow: 0px 3px 5px var(--box-shadow);
     position: relative;
+    background-color: var(--background-card);
 }
 
 .card img {
@@ -412,7 +413,7 @@ margin-left: 18px;
 
 /* RESTAURANTS RESPONSIVE TABLETTE */
 
-.container-restaurants {
+.container-cards {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -501,7 +502,7 @@ margin-left: 18px;
 
 /* RESTAURANTS RESPONSIVE PC */
 
-.container-restaurants {
+.container-cards {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -596,4 +597,4 @@ position: absolute;
 
 }
 
-
+/* MENUS */

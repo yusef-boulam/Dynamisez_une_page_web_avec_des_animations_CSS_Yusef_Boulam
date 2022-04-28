@@ -555,10 +555,17 @@ position: absolute;
     margin: 0;
 }
 
+/* PHOTO DU RESTAURANT */
+
 .container-picture-restaurant img {
     object-fit: cover;
     width: 100%;
-    height: 400px;
+    height: 278px;
     margin-top: 61px;
 }
 
+/* H1 HEART */
+
+.container-H1-heart {
+
+}

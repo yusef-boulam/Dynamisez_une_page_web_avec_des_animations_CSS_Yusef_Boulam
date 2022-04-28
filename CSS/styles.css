@@ -527,23 +527,38 @@ footer ul {
 /* ///////////////////////// PAGES RESTAURANTS //////////////////////*/
 
 
-.container-logo-pages-restaurants{
+.container-logo-pages-restaurants {
 width: 100%;
 height: 60px;
 display: flex;
 align-items: center;
 justify-content: center;
+position: absolute;
 }
 
-.container-logo-pages-restaurants p{
+.icon-arrow {
+    margin-left: 26px;
+    margin-top: 22px;
+    position: absolute;
+}
+
+
+.link {
+    outline: none;
+    text-decoration: none;
+    color: var(--color-text-primaire);
+}
+
+.container-logo-pages-restaurants p {
     font-family: 'Shrikhand', cursive;
     font-size: 31px;
     margin: 0;
 }
 
-.container-picture-restaurant img{
+.container-picture-restaurant img {
     object-fit: cover;
     width: 100%;
     height: 400px;
+    margin-top: 61px;
 }
 

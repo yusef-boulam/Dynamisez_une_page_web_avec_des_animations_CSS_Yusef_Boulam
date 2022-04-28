@@ -337,6 +337,8 @@ footer li i{
      color: red;
     }
 
+/* Fonctionnement RESPONSIVE TABLETTE */
+
     .container-fonctionnement {
         height: auto;
         padding-bottom: 68px;
@@ -354,6 +356,20 @@ footer li i{
     width: 28%;
 
 }
+
+/* RESTAURANTS RESPONSIVE TABLETTE */
+
+.container-restaurants {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    width: 45%;
+}
+
+
 
 }
 

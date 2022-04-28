@@ -337,6 +337,42 @@ footer li i{
      color: red;
     }
 
+
+/* LOCALISATION RESPONSIVE TABLETTE */
+
+.container-name-cities {
+    margin-left: 20px;
+    width: auto;
+}
+
+.container-name-cities p {
+margin-left: 30px;
+}
+
+/* H1 p Button RESPONSIVE TABLETTE */
+
+.container-H1-p-button {
+    text-align: left;
+    align-items: left;
+    width: 100%;
+ }
+
+ .container-H1-p-button h1 {
+    width: 100%;
+    margin-left: 46px;
+ }
+ 
+ .container-H1-p-button p {
+    width: 100%;
+    margin-left: 46px;
+ }
+
+ .button{
+     align-self: baseline;
+     margin-left: 27px;
+ }
+ 
+
 /* Fonctionnement RESPONSIVE TABLETTE */
 
     .container-fonctionnement {
@@ -374,14 +410,66 @@ footer li i{
 }
 
 
-/* ///////////////////////////////////RESPONSIVE MOBILE/////////////////////////////////////// */
+/* ///////////////////////////////////RESPONSIVE PC/////////////////////////////////////// */
 /* Sur les écrans, quand la largeur de la fenêtre fait au maximum 767px (telephone portable)*/
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 992px) {
 
     .container-logo p{
         color: green;
        }
+
+/* LOCALISATION RESPONSIVE PC */
+
+.container-name-cities {
+    margin-left: 20px;
+    width: auto;
+}
+
+.container-name-cities p {
+margin-left: 30px;
+}
+
+/* H1 p Button RESPONSIVE PC */
+
+.container-H1-p-button {
+    text-align: left;
+    align-items: left;
+ }
+ 
+
+/* Fonctionnement RESPONSIVE PC */
+
+    .container-fonctionnement {
+        height: auto;
+        padding-bottom: 68px;
+     }
+    
+    
+ .container-ETAPES { 
+    flex-direction: row;
+    height: auto;
+    padding: 0 10px 0 10px;
+}
+
+
+.container-etape {
+    width: 28%;
+
+}
+
+/* RESTAURANTS RESPONSIVE PC */
+
+.container-restaurants {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    width: 45%;
+}
+
 
 
 }

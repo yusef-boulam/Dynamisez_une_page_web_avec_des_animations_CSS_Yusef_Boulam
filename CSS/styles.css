@@ -291,13 +291,13 @@ section a {
     font-size: 17px;
 }
 
-.description_heart {
+.icone-heart {
     margin: 5% 7% 0 0;
     font-size: 25px;
     font-weight: 100;
 }
 
-.description_heart:hover{
+.icone-heart:hover{
     color: pink;
 }
 
@@ -522,3 +522,28 @@ footer ul {
 }
 
 }
+
+
+/* ///////////////////////// PAGES RESTAURANTS //////////////////////*/
+
+
+.container-logo-pages-restaurants{
+width: 100%;
+height: 60px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.container-logo-pages-restaurants p{
+    font-family: 'Shrikhand', cursive;
+    font-size: 31px;
+    margin: 0;
+}
+
+.container-picture-restaurant img{
+    object-fit: cover;
+    width: 100%;
+    height: 400px;
+}
+

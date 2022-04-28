@@ -306,7 +306,7 @@ section a {
  footer {
      background-color: var(--background-footer);
      color:  var(--color-text-secondaire);
-     padding: 5% 3% 10% 5%;
+     padding: 50px 30px 100px 50px;
  }
 
  .container-logo-footer p {
@@ -447,18 +447,34 @@ footer ul {
 }
 
 .container-name-cities p {
-margin-left: 30px;
+margin-left: 18px;
 }
 
-/* H1 p Button RESPONSIVE PC */
+/* H1 p Button RESPONSIVE TABLETTE */
 
 .container-H1-p-button {
     text-align: left;
     align-items: left;
+    width: 100%;
+ }
+
+ .container-H1-p-button h1 {
+    width: 100%;
+    margin-left: 46px;
+ }
+ 
+ .container-H1-p-button p {
+    width: 100%;
+    margin-left: 46px;
+ }
+
+ .button{
+     align-self: baseline;
+     margin-left: 27px;
  }
  
 
-/* Fonctionnement RESPONSIVE PC */
+/* Fonctionnement RESPONSIVE TABLETTE */
 
     .container-fonctionnement {
         height: auto;
@@ -478,7 +494,7 @@ margin-left: 30px;
 
 }
 
-/* RESTAURANTS RESPONSIVE PC */
+/* RESTAURANTS RESPONSIVE TABLETTE */
 
 .container-restaurants {
     flex-direction: row;
@@ -487,9 +503,17 @@ margin-left: 30px;
 }
 
 .card {
-    width: 45%;
+    width: 20%;
 }
 
+/* FOOTER RESPONSIVE TABLETTE */
+
+footer ul {
+    display: flex;
+    width: 60%;
+    max-width: 450px;
+    justify-content: space-between;
+}
 
 
 }

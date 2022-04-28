@@ -598,3 +598,13 @@ position: absolute;
 }
 
 /* MENUS */
+
+.card--menu .description_heading-p {
+    width: 100%;
+}
+
+.card--menu .description_heart {
+    margin-top: 38px;
+    margin-right: 20px;
+    font-weight: bold;
+}

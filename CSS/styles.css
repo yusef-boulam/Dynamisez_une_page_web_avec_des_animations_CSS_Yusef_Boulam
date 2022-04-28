@@ -450,7 +450,7 @@ footer ul {
 margin-left: 18px;
 }
 
-/* H1 p Button RESPONSIVE TABLETTE */
+/* H1 p Button RESPONSIVE PC */
 
 .container-H1-p-button {
     text-align: left;
@@ -474,7 +474,7 @@ margin-left: 18px;
  }
  
 
-/* Fonctionnement RESPONSIVE TABLETTE */
+/* Fonctionnement RESPONSIVE PC */
 
     .container-fonctionnement {
         height: auto;
@@ -494,7 +494,7 @@ margin-left: 18px;
 
 }
 
-/* RESTAURANTS RESPONSIVE TABLETTE */
+/* RESTAURANTS RESPONSIVE PC */
 
 .container-restaurants {
     flex-direction: row;
@@ -506,14 +506,19 @@ margin-left: 18px;
     width: 20%;
 }
 
-/* FOOTER RESPONSIVE TABLETTE */
+/* FOOTER RESPONSIVE PC */
 
 footer ul {
     display: flex;
-    width: 60%;
-    max-width: 450px;
-    justify-content: space-between;
+    width: 100%;
+    justify-content: space-around;
 }
 
+.container-two-link
+{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
 
 }

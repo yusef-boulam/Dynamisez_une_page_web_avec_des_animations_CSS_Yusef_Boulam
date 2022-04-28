@@ -130,7 +130,6 @@ body {
     height: 392px;
  }
 
-
  .container-fonctionnement h2{
     margin: 49px 0 21px 23px;
  }
@@ -160,23 +159,6 @@ body {
     background-color: var(--background-etape3);
  }
  
- .container-etape p {
-    font-size: 16px;
-    font-weight: 402;
-    margin: 0;
-}
-
-.icone-etape {
-    margin-right: 20px;
-    width: 30px;
-    font-size: 18px;
-    color: var(--color-icones-etapes);
- }
-
- .icone-boutique {
-    color: var(--primaire);
- }
-
  .nombre-etape{
     position: absolute;
     left: -12px;
@@ -188,6 +170,36 @@ body {
     align-items: center;
     justify-content: center;
  }
+
+ .container-etape p {
+    font-size: 16px;
+    font-weight: 402;
+    margin: 0;
+}
+
+.icone-etape {
+    margin-right: 12px;
+    display: flex;
+    margin-left: 10px;
+    width: 30px;
+    font-size: 18px;
+    color: var(--color-icones-etapes);
+ }
+
+ .ellipsis {
+     margin-top: 1.6px ;
+     font-size: 16px;
+ }
+
+ .bars {
+    font-size: 19px;
+    margin-left: 4px;
+ }
+
+ .icone-boutique {
+    color: var(--primaire);
+ }
+
 
  .nombre-etape p{
     display: block;

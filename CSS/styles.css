@@ -294,7 +294,7 @@ section a {
  footer {
      background-color: var(--background-footer);
      color:  var(--color-text-secondaire);
-     padding: 5% 3% 2% 5%;
+     padding: 5% 3% 10% 5%;
  }
 
  .container-logo-footer p {
@@ -405,6 +405,14 @@ margin-left: 18px;
     width: 45%;
 }
 
+/* FOOTER RESPONSIVE TABLETTE */
+
+footer ul {
+    display: flex;
+    width: 60%;
+    max-width: 450px;
+    justify-content: space-between;
+}
 
 
 }

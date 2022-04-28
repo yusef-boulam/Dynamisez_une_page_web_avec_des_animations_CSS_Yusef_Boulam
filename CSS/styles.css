@@ -30,6 +30,11 @@ html {
 --color-text-secondaire: white;
 }
 
+/* polices */
+
+.police-logo {
+    font-family: 'Shrikhand', cursive; 
+}
 
 /* géréral */
 
@@ -567,5 +572,28 @@ position: absolute;
 /* H1 HEART */
 
 .container-H1-heart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    background-color: var(--quaternaire);
+    position: absolute;
+    width: 100%;
+    top: 287px;
+    left: 0;
+    height: 95px;
+    border-radius: 40px 40px 0 0;
+}
+
+.container-H1-heart h1{
+    margin: 0 0 0 21px;
+    font-size: 28px;
+    font-weight: 1;
+}
+
+.container-H1-heart .icone-heart{
+    margin: 0 34px 0 0;
 
 }
+
+

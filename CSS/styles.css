@@ -633,12 +633,21 @@ footer li i {
     margin: 0;
     font-weight: 401;
     font-size: 18px;
+    width: 272px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
 }
 
 .card--menu .description_heading-p p {
     margin: 6px 0 0 0;
     font-weight: 399;
-    font-size: 14px;
+    font-size: 15px;
+    width: 272px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .card--menu .description_heading-p {

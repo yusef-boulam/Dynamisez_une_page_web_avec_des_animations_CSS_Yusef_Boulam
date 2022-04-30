@@ -532,6 +532,12 @@ footer ul {
 
 /* ///////////////////////// PAGES RESTAURANTS //////////////////////*/
 
+/* GENERAL - PAGES RESTAURANTS */
+
+
+
+
+/* LOGO ET RETOUR - PAGES RESTAURANTS */
 
 .container-logo-pages-restaurants {
 width: 100%;
@@ -561,7 +567,7 @@ position: absolute;
     margin: 0;
 }
 
-/* PHOTO DU RESTAURANT */
+/* PHOTO DU RESTAURANT  - PAGES RESTAURANTS */
 
 .container-picture-restaurant img {
     object-fit: cover;
@@ -570,7 +576,7 @@ position: absolute;
     margin-top: 61px;
 }
 
-/* H1 HEART */
+/* H1 HEART - PAGES RESTAURANTS  */
 
 .container-H1-heart {
     display: flex;
@@ -597,14 +603,56 @@ position: absolute;
 
 }
 
-/* MENUS */
+/* MENUS - PAGES RESTAURANTS  */
+ 
+.section--menu {
+    margin-top: 10px;
+}
+
+
+.section--menu h2 {
+    font-size: 17px;
+    font-weight: 385;
+    margin-top: 27px;
+}
+
+.card--menu {
+margin-bottom: 13px;
+}
+
+.card--menu .card_description {
+    height: auto;
+    padding: 14px 10px 14px 10px;
+    }  
+  
+    .card--menu .description_heading-p {
+        height: auto;
+        } 
+
+.card--menu .description_heading-p h3 {
+    margin: 0;
+    font-weight: 401;
+    font-size: 18px;
+}
+
+.card--menu .description_heading-p p{
+    margin: 6px 0 0 0;
+    font-weight: 399;
+    font-size: 14px;
+}
 
 .card--menu .description_heading-p {
     width: 100%;
 }
 
-.card--menu .description_heart {
-    margin-top: 38px;
-    margin-right: 20px;
-    font-weight: bold;
+.price-menu {
+    align-self: flex-end;
 }
+
+.price-menu p{
+    margin-right: 12px;
+    margin-bottom: -3px;
+    font-weight: 401;
+    font-size: 15px;
+}
+

@@ -312,7 +312,8 @@ section a {
 footer {
     background-color: var(--background-footer);
     color: var(--color-text-secondaire);
-    padding: 50px 30px 100px 50px;
+    padding: 24px 30px 34px 26px;
+    /* padding: 50px 30px 100px 50px; */
 }
 
 .container-logo-footer p {

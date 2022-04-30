@@ -12,6 +12,13 @@ body {
 }
 
 
+.global-margin {
+    width: 100%;
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* couleurs */
 
 html {
@@ -35,12 +42,6 @@ html {
 
 .police-logo {
     font-family: 'Shrikhand', cursive;
-}
-
-/* géréral */
-
-body {
-    width: 100%;
 }
 
 
@@ -587,7 +588,6 @@ footer li i {
     position: absolute;
     width: 100%;
     top: 287px;
-    left: 0;
     height: 95px;
     border-radius: 40px 40px 0 0;
 }
@@ -633,7 +633,7 @@ footer li i {
     margin: 0;
     font-weight: 401;
     font-size: 18px;
-    width: 272px;
+    width: 94%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -644,7 +644,7 @@ footer li i {
     margin: 6px 0 0 0;
     font-weight: 399;
     font-size: 15px;
-    width: 272px;
+    width: 94%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;

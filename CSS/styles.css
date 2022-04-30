@@ -15,26 +15,26 @@ body {
 /* couleurs */
 
 html {
---primaire: #9356DC;
---secondaire: #FF79DA;
---tertiaire: #99E2D0;
---quaternaire:#ececec;
---background-card: white;
---background-location: #dbdbdb;
---background-footer:#353535;
---color-icones-etapes:#7E7E7E;
---background-etape3: #F5EDFF;
---background-nouveau:#99E2D0 ;
---color-nouveau: #008766;
---box-shadow: rgb(182, 182, 182);
---color-text-primaire: black;
---color-text-secondaire: white;
+    --primaire: #9356DC;
+    --secondaire: #FF79DA;
+    --tertiaire: #99E2D0;
+    --quaternaire: #ececec;
+    --background-card: white;
+    --background-location: #dbdbdb;
+    --background-footer: #353535;
+    --color-icones-etapes: #7E7E7E;
+    --background-etape3: #F5EDFF;
+    --background-nouveau: #99E2D0;
+    --color-nouveau: #008766;
+    --box-shadow: rgb(182, 182, 182);
+    --color-text-primaire: black;
+    --color-text-secondaire: white;
 }
 
 /* polices */
 
 .police-logo {
-    font-family: 'Shrikhand', cursive; 
+    font-family: 'Shrikhand', cursive;
 }
 
 /* géréral */
@@ -54,10 +54,10 @@ body {
     align-items: center;
     justify-content: center;
     position: absolute;
-    top:0;
+    top: 0;
 }
 
-.container-logo p{
+.container-logo p {
     font-family: 'Shrikhand', cursive;
     font-size: 31px;
     margin: 0;
@@ -69,7 +69,7 @@ body {
     height: 51px;
     display: flex;
     align-items: center;
-    background-color:  var(--background-location);
+    background-color: var(--background-location);
     margin-top: 61px;
 }
 
@@ -83,7 +83,7 @@ body {
     text-align: center;
     align-items: center;
     display: flex;
-    width: 163px; 
+    width: 163px;
 }
 
 .container-name-cities p {
@@ -92,31 +92,31 @@ body {
 
 }
 
- /* H1 p Button */
+/* H1 p Button */
 
- .container-H1-p-button {
+.container-H1-p-button {
     padding-bottom: 54px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color:  var(--quaternaire);
- }
+    background-color: var(--quaternaire);
+}
 
- .container-H1-p-button h1 {
+.container-H1-p-button h1 {
     width: 70%;
     font-size: 25px;
     margin: 43px 0 0 0;
- }
- 
- .container-H1-p-button p {
+}
+
+.container-H1-p-button p {
     width: 90%;
     font-size: 19px;
     margin: 9px 0 0 0;
-   font-weight: 390;
- }
+    font-weight: 390;
+}
 
- .button{
+.button {
     color: var(--color-text-secondaire);
     background-color: var(--primaire);
     font-size: 16px;
@@ -125,47 +125,47 @@ body {
     border-radius: 30px;
     margin: 28px 0 0 0;
     cursor: pointer;
-    border:none;
-    background: linear-gradient( 175deg,var(--secondaire), var(--primaire));
+    border: none;
+    background: linear-gradient(175deg, var(--secondaire), var(--primaire));
 
- }
+}
 
- /* Fonctionnement   */
+/* Fonctionnement   */
 
- .container-fonctionnement {
+.container-fonctionnement {
     height: 392px;
- }
+}
 
- .container-fonctionnement h2{
+.container-fonctionnement h2 {
     margin: 49px 0 21px 23px;
- }
+}
 
- .container-ETAPES { 
-        height: 282px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        text-align: center;
- }
+.container-ETAPES {
+    height: 282px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
 
- .container-etape {
-     background-color: var(--quaternaire);
-     box-shadow: 0px 3px 5px var(--box-shadow);
-     padding: 10px 30px 10px 30px;
-     width: 85%;
-     height: 75px;
-     display: flex;
-     align-items: center;
-     border-radius: 20px;
-     position: relative;
- }
+.container-etape {
+    background-color: var(--quaternaire);
+    box-shadow: 0px 3px 5px var(--box-shadow);
+    padding: 10px 30px 10px 30px;
+    width: 85%;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    position: relative;
+}
 
- .etape-boutique {
+.etape-boutique {
     background-color: var(--background-etape3);
- }
- 
- .nombre-etape{
+}
+
+.nombre-etape {
     position: absolute;
     left: -12px;
     background-color: var(--primaire);
@@ -175,9 +175,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
- }
+}
 
- .container-etape p {
+.container-etape p {
     font-size: 16px;
     font-weight: 402;
     margin: 0;
@@ -190,27 +190,27 @@ body {
     width: 30px;
     font-size: 18px;
     color: var(--color-icones-etapes);
- }
+}
 
- .ellipsis {
-     margin-top: 1.6px ;
-     font-size: 16px;
- }
+.ellipsis {
+    margin-top: 1.6px;
+    font-size: 16px;
+}
 
- .bars {
+.bars {
     font-size: 19px;
- }
+}
 
- .icone-boutique {
+.icone-boutique {
     color: var(--primaire);
- }
+}
 
 
- .nombre-etape p{
+.nombre-etape p {
     display: block;
     font-size: 15px;
-    color:  var(--color-text-secondaire);
- }
+    color: var(--color-text-secondaire);
+}
 
 /* RESTAURANTS */
 
@@ -303,134 +303,134 @@ section a {
     font-weight: 100;
 }
 
-.icone-heart:hover{
+.icone-heart:hover {
     color: pink;
 }
 
- /* FOOTER */
+/* FOOTER */
 
- footer {
-     background-color: var(--background-footer);
-     color:  var(--color-text-secondaire);
-     padding: 50px 30px 100px 50px;
- }
+footer {
+    background-color: var(--background-footer);
+    color: var(--color-text-secondaire);
+    padding: 50px 30px 100px 50px;
+}
 
- .container-logo-footer p {
+.container-logo-footer p {
     font-family: 'Shrikhand', cursive;
     font-size: 20px;
     margin: 0;
 }
 
- footer a {
+footer a {
     outline: none;
     text-decoration: none;
-    color:  var(--white);
+    color: var(--white);
 }
 
 footer ul {
     list-style: none;
     margin: 20px 0 0 0;
     padding: 0;
-  }
+}
 
 footer li {
     margin-top: 10px;
-  }
+}
 
-footer li i{
+footer li i {
     margin-right: 8px;
     width: 10px;
     font-size: 12px;
-  }
+}
 
 
-  /* ///////////////////////////////////RESPONSIVE TABLETTE/////////////////////////////////////// */
+/* ///////////////////////////////////RESPONSIVE TABLETTE/////////////////////////////////////// */
 /* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 768px et 992px (tablette) */
 /*  @media all and (min-width: 768px) and (max-width: 992px) */
 /* RESPONSIVE TABLETTE */
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
 
-    .container-logo p{
-     color: red;
+    .container-logo p {
+        color: red;
     }
 
 
-/* LOCALISATION RESPONSIVE TABLETTE */
+    /* LOCALISATION RESPONSIVE TABLETTE */
 
-.container-name-cities {
-    margin-left: 20px;
-    width: auto;
-}
+    .container-name-cities {
+        margin-left: 20px;
+        width: auto;
+    }
 
-.container-name-cities p {
-margin-left: 18px;
-}
+    .container-name-cities p {
+        margin-left: 18px;
+    }
 
-/* H1 p Button RESPONSIVE TABLETTE */
+    /* H1 p Button RESPONSIVE TABLETTE */
 
-.container-H1-p-button {
-    text-align: left;
-    align-items: left;
-    width: 100%;
- }
+    .container-H1-p-button {
+        text-align: left;
+        align-items: left;
+        width: 100%;
+    }
 
- .container-H1-p-button h1 {
-    width: 100%;
-    margin-left: 46px;
- }
- 
- .container-H1-p-button p {
-    width: 100%;
-    margin-left: 46px;
- }
+    .container-H1-p-button h1 {
+        width: 100%;
+        margin-left: 46px;
+    }
 
- .button{
-     align-self: baseline;
-     margin-left: 27px;
- }
- 
+    .container-H1-p-button p {
+        width: 100%;
+        margin-left: 46px;
+    }
 
-/* Fonctionnement RESPONSIVE TABLETTE */
+    .button {
+        align-self: baseline;
+        margin-left: 27px;
+    }
+
+
+    /* Fonctionnement RESPONSIVE TABLETTE */
 
     .container-fonctionnement {
         height: auto;
         padding-bottom: 68px;
-     }
-    
-    
- .container-ETAPES { 
-    flex-direction: row;
-    height: auto;
-    padding: 0 10px 0 10px;
-}
+    }
 
 
-.container-etape {
-    width: 28%;
+    .container-ETAPES {
+        flex-direction: row;
+        height: auto;
+        padding: 0 10px 0 10px;
+    }
 
-}
 
-/* RESTAURANTS RESPONSIVE TABLETTE */
+    .container-etape {
+        width: 28%;
 
-.container-cards {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
+    }
 
-.card {
-    width: 45%;
-}
+    /* RESTAURANTS RESPONSIVE TABLETTE */
 
-/* FOOTER RESPONSIVE TABLETTE */
+    .container-cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
 
-footer ul {
-    display: flex;
-    width: 60%;
-    max-width: 450px;
-    justify-content: space-between;
-}
+    .card {
+        width: 45%;
+    }
+
+    /* FOOTER RESPONSIVE TABLETTE */
+
+    footer ul {
+        display: flex;
+        width: 60%;
+        max-width: 450px;
+        justify-content: space-between;
+    }
 
 
 }
@@ -441,91 +441,90 @@ footer ul {
 
 @media screen and (min-width: 992px) {
 
-    .container-logo p{
+    .container-logo p {
         color: green;
-       }
+    }
 
-/* LOCALISATION RESPONSIVE PC */
+    /* LOCALISATION RESPONSIVE PC */
 
-.container-name-cities {
-    margin-left: 20px;
-    width: auto;
-}
+    .container-name-cities {
+        margin-left: 20px;
+        width: auto;
+    }
 
-.container-name-cities p {
-margin-left: 18px;
-}
+    .container-name-cities p {
+        margin-left: 18px;
+    }
 
-/* H1 p Button RESPONSIVE PC */
+    /* H1 p Button RESPONSIVE PC */
 
-.container-H1-p-button {
-    text-align: left;
-    align-items: left;
-    width: 100%;
- }
+    .container-H1-p-button {
+        text-align: left;
+        align-items: left;
+        width: 100%;
+    }
 
- .container-H1-p-button h1 {
-    width: 100%;
-    margin-left: 46px;
- }
- 
- .container-H1-p-button p {
-    width: 100%;
-    margin-left: 46px;
- }
+    .container-H1-p-button h1 {
+        width: 100%;
+        margin-left: 46px;
+    }
 
- .button{
-     align-self: baseline;
-     margin-left: 27px;
- }
- 
+    .container-H1-p-button p {
+        width: 100%;
+        margin-left: 46px;
+    }
 
-/* Fonctionnement RESPONSIVE PC */
+    .button {
+        align-self: baseline;
+        margin-left: 27px;
+    }
+
+
+    /* Fonctionnement RESPONSIVE PC */
 
     .container-fonctionnement {
         height: auto;
         padding-bottom: 68px;
-     }
-    
-    
- .container-ETAPES { 
-    flex-direction: row;
-    height: auto;
-    padding: 0 10px 0 10px;
-}
+    }
 
 
-.container-etape {
-    width: 28%;
+    .container-ETAPES {
+        flex-direction: row;
+        height: auto;
+        padding: 0 10px 0 10px;
+    }
 
-}
 
-/* RESTAURANTS RESPONSIVE PC */
+    .container-etape {
+        width: 28%;
 
-.container-cards {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
+    }
 
-.card {
-    width: 20%;
-}
+    /* RESTAURANTS RESPONSIVE PC */
 
-/* FOOTER RESPONSIVE PC */
+    .container-cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
 
-footer ul {
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-}
+    .card {
+        width: 20%;
+    }
 
-.container-two-link
-{
-    width: 50%;
-    display: flex;
-    justify-content: space-around;
-}
+    /* FOOTER RESPONSIVE PC */
+
+    footer ul {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .container-two-link {
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+    }
 
 }
 
@@ -540,12 +539,12 @@ footer ul {
 /* LOGO ET RETOUR - PAGES RESTAURANTS */
 
 .container-logo-pages-restaurants {
-width: 100%;
-height: 60px;
-display: flex;
-align-items: center;
-justify-content: center;
-position: absolute;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
 }
 
 .icon-arrow {
@@ -592,19 +591,19 @@ position: absolute;
     border-radius: 40px 40px 0 0;
 }
 
-.container-H1-heart h1{
+.container-H1-heart h1 {
     margin: 0 0 0 21px;
     font-size: 28px;
     font-weight: 1;
 }
 
-.container-H1-heart .icone-heart{
+.container-H1-heart .icone-heart {
     margin: 0 34px 0 0;
 
 }
 
 /* MENUS - PAGES RESTAURANTS  */
- 
+
 .section--menu {
     margin-top: 10px;
 }
@@ -617,17 +616,17 @@ position: absolute;
 }
 
 .card--menu {
-margin-bottom: 13px;
+    margin-bottom: 13px;
 }
 
 .card--menu .card_description {
     height: auto;
     padding: 14px 10px 14px 10px;
-    }  
-  
-    .card--menu .description_heading-p {
-        height: auto;
-        } 
+}
+
+.card--menu .description_heading-p {
+    height: auto;
+}
 
 .card--menu .description_heading-p h3 {
     margin: 0;
@@ -635,7 +634,7 @@ margin-bottom: 13px;
     font-size: 18px;
 }
 
-.card--menu .description_heading-p p{
+.card--menu .description_heading-p p {
     margin: 6px 0 0 0;
     font-weight: 399;
     font-size: 14px;
@@ -649,10 +648,22 @@ margin-bottom: 13px;
     align-self: flex-end;
 }
 
-.price-menu p{
+.price-menu p {
     margin-right: 12px;
     margin-bottom: -3px;
     font-weight: 401;
     font-size: 15px;
 }
 
+
+/* BUTTON MENUS - PAGES RESTAURANTS  */
+
+.container-button-menu {
+    text-align: center;
+}
+
+.button-menu {
+    font-weight: 400;
+    padding: 16px 50px 16px 50px;
+    margin: 11px 0 51px 0;
+}

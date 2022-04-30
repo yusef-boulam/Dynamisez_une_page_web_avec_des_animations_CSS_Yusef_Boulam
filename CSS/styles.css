@@ -643,7 +643,7 @@ footer li i {
 .card--menu .description_heading-p p {
     margin: 6px 0 0 0;
     font-weight: 399;
-    font-size: 15px;
+    font-size: 14.5px;
     width: 94%;
     white-space: nowrap;
     overflow: hidden;
@@ -651,7 +651,7 @@ footer li i {
 }
 
 .card--menu .description_heading-p {
-    width: 100%;
+    width: 85%;
 }
 
 .price-menu {
@@ -677,3 +677,44 @@ footer li i {
     padding: 16px 50px 16px 50px;
     margin: 11px 0 51px 0;
 }
+
+/* ///////////////////////////////////PAGES RESTAURANTS - RESPONSIVE TABLETTE/////////////////////////////////////// */
+/* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 768px et 992px (tablette) */
+/*  @media all and (min-width: 768px) and (max-width: 992px) */
+/* RESPONSIVE TABLETTE */
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+    .container-logo-pages-restaurants p {
+        color: red;
+    }
+
+    .container-cards {
+        flex-wrap: nowrap;
+    }
+
+    .card--menu {
+        width: 31%;
+    }
+}
+
+
+
+
+/* ///////////////////////////////////PAGES RESTAURANTS - RESPONSIVE PC/////////////////////////////////////// */
+/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 767px (telephone portable)*/
+
+@media screen and (min-width: 992px) {
+
+    .container-logo-pages-restaurants p {
+        color: green;
+    }
+
+
+
+.container-menu-type{
+    display: flex;
+}
+
+}
+

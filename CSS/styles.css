@@ -695,7 +695,8 @@ footer li i {
     }
 
     .section--menu .container-cards {
-        flex-wrap: nowrap;
+        justify-content: flex-start;
+        justify-content: space-between;
     }
 
     .card--menu {

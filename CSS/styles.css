@@ -32,6 +32,7 @@ html {
     --color-icones-etapes: #7E7E7E;
     --background-etape3: #F5EDFF;
     --background-nouveau: #99E2D0;
+    --border-bottom-H2: #99E2D0;
     --color-nouveau: #008766;
     --box-shadow: rgb(182, 182, 182);
     --color-text-primaire: black;
@@ -223,6 +224,16 @@ section {
 
 section h2 {
     margin: 52px 0 21px 0;
+    position: relative;
+}
+
+.border-bottom-h2{
+    position: absolute;
+    top: 17px;
+    left: 1px;
+    border-bottom: var(--border-bottom-H2) 3px solid;
+    width: 42px;
+    height: 10px;
 }
 
 .container-cards {
@@ -543,7 +554,6 @@ footer li i {
     align-items: center;
     justify-content: center;
     position: absolute;
-    background-color: var(--quaternaire);
 }
 
 .icon-arrow {

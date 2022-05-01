@@ -694,7 +694,7 @@ footer li i {
         padding-right:  20px;
     }
 
-    .container-cards {
+    .section--menu .container-cards {
         flex-wrap: nowrap;
     }
 

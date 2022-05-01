@@ -35,6 +35,8 @@ html {
     --border-bottom-H2: #99E2D0;
     --color-nouveau: #008766;
     --box-shadow: rgb(214, 214, 214);
+    --box-shadow-button: rgb(184, 184, 184);
+    --box-shadow-button-darken: rgb(130, 130, 130);
     --color-text-primaire: black;
     --color-text-secondaire: white;
 }
@@ -112,6 +114,8 @@ html {
     margin: 43px 0 0 0;
 }
 
+/* BUTTON */
+
 .container-H1-p-button p {
     width: 90%;
     font-size: 19px;
@@ -130,8 +134,29 @@ html {
     cursor: pointer;
     border: none;
     background: linear-gradient(175deg, var(--secondaire), var(--primaire));
-
+    box-shadow: 0px 4px 10px var(--box-shadow-button);
+    position: relative;
+    z-index: 1;
 }
+
+.button:hover .btn__bg {
+    opacity: 1;
+}
+.btn__bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(175deg, var(--secondaire), var(--primaire));
+    filter:brightness(1.1);
+    box-shadow: 0px 3px 5px var(--box-shadow-button-darken);
+    border-radius: 30px;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 250ms;
+}
+
 
 /* Fonctionnement   */
 

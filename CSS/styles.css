@@ -190,17 +190,21 @@ html {
     display: flex;
     margin-left: 10px;
     width: 30px;
+    height: 30px;
     font-size: 18px;
     color: var(--color-icones-etapes);
+    align-items: center;
 }
 
 .ellipsis {
-    margin-top: 1.6px;
     font-size: 16px;
+
 }
 
 .bars {
     font-size: 19px;
+    margin-left: 2px;
+
 }
 
 .icone-boutique {

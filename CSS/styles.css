@@ -14,31 +14,34 @@ body {
 /* ANIMATION LOADER */
 
 .container-load {
-    position: fixed;
+    position: absolute;
     width: 100%;
     height: 100vh;
-    z-index: 9999;
     display: flex;
     justify-content: center;
     align-items: center;
     top:0px;
     left: 0;
+    z-index: 0;
+ 
 }
 
 .load {
+    position: fixed;
     width: 80px;
     height: 30px;
     display: flex;
     justify-content: space-evenly;
     animation : opacity-loader 3000ms;
-    opacity: 0;
+    opacity:0;
+    
 }
 
 .load__bar {
     background-color: black;
     height: 100%;
     width: 7px;
-    animation: bars 500ms backwards 10 ease-in-out alternate;
+    animation: bars 500ms backwards 8 ease-in-out alternate;
   
 }
 .load__bar--1 {
@@ -428,6 +431,39 @@ section a {
     z-index: -1;
 }
 
+/* ANIMATION MENU CARD */
+
+
+.card--menu {
+    animation: opacity-menu 2s forwards;
+    opacity: 0;
+
+  
+}
+.menu-card-1 {
+    animation-delay: 200ms;
+}
+.menu-card-2 {
+    animation-delay: 400ms;
+}
+.menu-card-3 {
+    animation-delay: 600ms;
+}
+.menu-card-4 {
+    animation-delay: 800ms;
+}
+
+
+   @keyframes opacity-menu {
+    0% {
+        opacity: 0;
+        transform: translateY(200px);
+   }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+   }}
+
 /* FOOTER */
 
 footer {
@@ -789,6 +825,10 @@ footer li i {
     background-color: var(--quaternaire); 
 }
 
+.container-button-menu .button{
+margin: 0 0 50px 0;
+}
+
 .button-menu {
     font-weight: 400;
     padding: 16px 50px 16px 50px;
@@ -906,7 +946,7 @@ footer li i {
   
 }
 
-.button-menu {
+.container-button-menu .button{
     margin-left: 35px;
 }
 

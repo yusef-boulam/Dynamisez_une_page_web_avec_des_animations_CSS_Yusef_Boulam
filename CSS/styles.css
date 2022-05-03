@@ -11,6 +11,43 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.global-margin {
+    width: 100%;
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* couleurs */
+
+html {
+    --primaire: #9356DC;
+    --secondaire: #FF79DA;
+    --tertiaire: #99E2D0;
+    --quaternaire: #ececec;
+    --background-card: white;
+    --background-location: #dbdbdb;
+    --background-footer: #353535;
+    --color-icones-etapes: #7E7E7E;
+    --background-etape3: #F5EDFF;
+    --background-nouveau: #99E2D0;
+    --background-animation-hover-card-menu: #99E2D0;
+    --border-bottom-H2: #99E2D0;
+    --color-nouveau: #008766;
+    --box-shadow: rgb(214, 214, 214);
+    --box-shadow-button: rgb(184, 184, 184);
+    --box-shadow-button-darken: rgb(130, 130, 130);
+    --color-text-primaire: black;
+    --color-text-secondaire: white;
+}
+
+/* polices */
+
+.police-logo {
+    font-family: 'Shrikhand', cursive;
+}
+
+
 /* ANIMATION LOADER */
 
 .container-load {
@@ -73,43 +110,6 @@ body {
     100% {
         opacity: 1;
    }}
-
-
-.global-margin {
-    width: 100%;
-    max-width: 1500px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* couleurs */
-
-html {
-    --primaire: #9356DC;
-    --secondaire: #FF79DA;
-    --tertiaire: #99E2D0;
-    --quaternaire: #ececec;
-    --background-card: white;
-    --background-location: #dbdbdb;
-    --background-footer: #353535;
-    --color-icones-etapes: #7E7E7E;
-    --background-etape3: #F5EDFF;
-    --background-nouveau: #99E2D0;
-    --border-bottom-H2: #99E2D0;
-    --color-nouveau: #008766;
-    --box-shadow: rgb(214, 214, 214);
-    --box-shadow-button: rgb(184, 184, 184);
-    --box-shadow-button-darken: rgb(130, 130, 130);
-    --color-text-primaire: black;
-    --color-text-secondaire: white;
-}
-
-/* polices */
-
-.police-logo {
-    font-family: 'Shrikhand', cursive;
-}
-
 
 
 /*LOGO */
@@ -431,38 +431,6 @@ section a {
     z-index: -1;
 }
 
-/* ANIMATION MENU CARD */
-
-
-.card--menu {
-    animation: opacity-menu 2s forwards;
-    opacity: 0;
-
-  
-}
-.menu-card-1 {
-    animation-delay: 200ms;
-}
-.menu-card-2 {
-    animation-delay: 400ms;
-}
-.menu-card-3 {
-    animation-delay: 600ms;
-}
-.menu-card-4 {
-    animation-delay: 800ms;
-}
-
-
-   @keyframes opacity-menu {
-    0% {
-        opacity: 0;
-        transform: translateY(200px);
-   }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-   }}
 
 /* FOOTER */
 
@@ -508,10 +476,6 @@ footer li i {
 /* RESPONSIVE TABLETTE */
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
-
-    .container-logo p {
-        color: red;
-    }
 
 
     /* LOCALISATION RESPONSIVE TABLETTE */
@@ -598,10 +562,6 @@ footer li i {
 /* Sur les écrans, quand la largeur de la fenêtre fait au maximum 767px (telephone portable)*/
 
 @media screen and (min-width: 992px) {
-
-    .container-logo p {
-        color: green;
-    }
 
     /* LOCALISATION RESPONSIVE PC */
 
@@ -817,6 +777,77 @@ footer li i {
     font-size: 15px;
 }
 
+/* ANIMATION TRANSLATE Y MENU CARD */
+
+
+.card--menu {
+    animation: opacity-menu 2s forwards;
+    opacity: 0;
+}
+.menu-card-1 {
+    animation-delay: 200ms;
+}
+.menu-card-2 {
+    animation-delay: 400ms;
+}
+.menu-card-3 {
+    animation-delay: 600ms;
+}
+.menu-card-4 {
+    animation-delay: 800ms;
+}
+
+
+   @keyframes opacity-menu {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+   }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+   }}
+
+
+   /* ANIMATION TRANSLATE Y MENU CARD */
+
+   .card--menu {
+       overflow: hidden;
+   }
+
+   .card--menu:hover .hover-animation-translateY-card-menu {
+       transform: translateX(-65px);
+       transition: transform 500ms;
+   }
+
+   .card--menu:hover .price-menu {
+    transform: translateX(-65px);
+    transition: transform 500ms;
+}
+
+.hover-animation-translateY-card-menu {
+    width: 65px;
+    height: 70px;
+    background-color: var(--background-animation-hover-card-menu);
+    position: absolute;
+    top: 0px;
+    right: -65px;
+    z-index: -1;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hover-animation-rotate-card-menu {
+ font-size: 26px;
+ color: var(--color-text-secondaire);
+}
+
+.card--menu:hover .hover-animation-rotate-card-menu {
+transform: rotate(360deg);
+    transition: transform 500ms;
+}
+
 
 /* BUTTON MENUS - PAGES RESTAURANTS  */
 
@@ -842,9 +873,6 @@ margin: 0 0 50px 0;
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
 
-    .container-logo-pages-restaurants p {
-        color: red;
-    }
 
 /* MENUS - PAGES RESTAURANTS - RESPONSIVE TABLETTE  */
 
@@ -897,9 +925,7 @@ margin: 0 0 50px 0;
 
 @media screen and (min-width: 992px) {
 
-    .container-logo-pages-restaurants p {
-        color: green;
-    }
+
 
 /* MENUS - PAGES RESTAURANTS - RESPONSIVE PC  */
 

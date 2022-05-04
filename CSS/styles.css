@@ -36,7 +36,7 @@ html {
     --color-nouveau: #008766;
     --box-shadow: rgb(214, 214, 214);
     --box-shadow-button: rgb(184, 184, 184);
-    --box-shadow-button-darken: rgb(130, 130, 130);
+    --box-shadow-button-darken: rgb(110, 110, 110);
     --color-text-primaire: black;
     --color-text-secondaire: white;
 }
@@ -201,28 +201,12 @@ html {
     z-index: 1;
 }
 
-/* .button:hover .btn__bg {
-    opacity: 1;
-} */
+/* ANIMATION HOVER BUTTON  */
 
 .button:hover {
     filter:brightness(1.1);
+    box-shadow: 0px 8px 10px var(--box-shadow-button-darken);
 }
-
-/* .btn__bg {
-    background: linear-gradient(175deg, var(--secondaire), var(--primaire));
-    filter:brightness(1.1);
-    border-radius: 30px;
-    box-shadow: 0px 3px 5px var(--box-shadow-button-darken);
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    opacity: 0;
-    z-index: -1;
-    transition: opacity 250ms;
-} */
 
 
 /* Fonctionnement   */
@@ -857,18 +841,18 @@ transform: rotate(360deg);
 /* BUTTON MENUS - PAGES RESTAURANTS  */
 
 .container-button-menu {
-    text-align: center;
-    background-color: var(--quaternaire); 
+ 
 }
 
 .container-button-menu .button{
-margin: 0 0 50px 0;
+
 }
 
 .button-menu {
     font-weight: 400;
     padding: 16px 50px 16px 50px;
-    margin: 11px 0 51px 0;
+    background-color: var(--quaternaire); 
+    margin: 0 auto 50px auto;
 }
 
 /* ///////////////////////////////////PAGES RESTAURANTS - RESPONSIVE TABLETTE/////////////////////////////////////// */

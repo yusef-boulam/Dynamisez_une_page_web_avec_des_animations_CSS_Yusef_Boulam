@@ -201,10 +201,15 @@ html {
     z-index: 1;
 }
 
-.button:hover .btn__bg {
+/* .button:hover .btn__bg {
     opacity: 1;
+} */
+
+.button:hover {
+    filter:brightness(1.1);
 }
-.btn__bg {
+
+/* .btn__bg {
     background: linear-gradient(175deg, var(--secondaire), var(--primaire));
     filter:brightness(1.1);
     border-radius: 30px;
@@ -217,7 +222,7 @@ html {
     opacity: 0;
     z-index: -1;
     transition: opacity 250ms;
-}
+} */
 
 
 /* Fonctionnement   */

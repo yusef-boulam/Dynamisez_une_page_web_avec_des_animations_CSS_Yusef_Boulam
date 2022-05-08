@@ -135,13 +135,11 @@ html {
     justify-content: center;
     position: absolute;
     top: 0;
-}
-
-.container-logo p {
     font-family: 'Shrikhand', cursive;
     font-size: 31px;
     margin: 0;
 }
+
 
 /*LOCALISATION */
 
@@ -218,7 +216,7 @@ html {
 }
 
 
-/* Fonctionnement   */
+/* FONCTIONNEMENT   */
 
 .container-fonctionnement {
     height: 392px;
@@ -658,6 +656,9 @@ footer li i {
     align-items: center;
     justify-content: center;
     position: absolute;
+    font-family: 'Shrikhand', cursive;
+    font-size: 31px;
+    margin: 0;
 }
 
 .icon-arrow {
@@ -673,11 +674,6 @@ footer li i {
     color: var(--color-text-primaire);
 }
 
-.container-logo-pages-restaurants p {
-    font-family: 'Shrikhand', cursive;
-    font-size: 31px;
-    margin: 0;
-}
 
 /* PHOTO DU RESTAURANT  - PAGES RESTAURANTS */
 

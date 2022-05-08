@@ -149,21 +149,18 @@ html {
     height: 51px;
     display: flex;
     align-items: center;
+    justify-content: center;
     background-color: var(--background-location);
     margin-top: 61px;
 }
 
-.container-icone-location {
+.container-location i {
     font-size: 17px;
 }
 
-.container-name-cities {
-    margin: 20px auto 20px auto;
+.container-location p {
+    margin: 20px 0 20px 20px;
     font-weight: 401;
-    text-align: center;
-    align-items: center;
-    display: flex;
-    width: 163px;
 }
 
 .container-name-cities p {
@@ -481,10 +478,13 @@ footer li i {
 
     /* LOCALISATION RESPONSIVE TABLETTE */
 
-    .container-name-cities {
-        margin-left: 20px;
-        width: auto;
+    .container-location {
+       justify-content: left;
     }
+
+    .container-location i{
+       margin-left: 25px;
+     }
 
     .container-name-cities p {
         margin-left: 18px;

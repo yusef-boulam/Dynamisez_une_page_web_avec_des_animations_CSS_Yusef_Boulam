@@ -422,7 +422,6 @@ section a {
     z-index: -1;
 }
 
-
 /* FOOTER */
 
 footer {
@@ -459,7 +458,6 @@ footer li i {
     width: 10px;
     font-size: 12px;
 }
-
 
 /* ///////////////////////////////////RESPONSIVE TABLETTE/////////////////////////////////////// */
 /* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 768px et 992px (tablette) */
@@ -673,7 +671,7 @@ footer li i {
 }
 
 
-/* PHOTO DU RESTAURANT  - PAGES RESTAURANTS */
+/* PHOTO DU RESTAURANT - PAGES RESTAURANTS */
 
 .container-picture-restaurant img {
     object-fit: cover;
@@ -713,7 +711,6 @@ footer li i {
 .section--menu {
     margin-top: 10px;
 }
-
 
 .section--menu h2 {
     font-size: 17px;
@@ -801,7 +798,7 @@ footer li i {
    }}
 
 
-   /* ANIMATION TRANSLATE Y MENU CARD */
+   /* ANIMATION CHECK MENU CARD */
 
    .card--menu {
        overflow: hidden;
@@ -843,15 +840,9 @@ transform: rotate(360deg);
 
 /* BUTTON MENUS - PAGES RESTAURANTS  */
 
-.container-button-menu {
-
-}
-
-.container-button-menu .button{
-
-}
-
 .button-menu {
+    display: flex;
+    align-self: center;
     font-weight: 400;
     padding: 16px 50px 16px 50px;
     background-color: var(--quaternaire);
@@ -907,6 +898,15 @@ transform: rotate(360deg);
     .price-menu P{
     margin: 0;
     }
+
+
+/* BUTTON MENUS - PAGES RESTAURANTS - RESPONSIVE TABLETTE  */
+    
+.button-menu {
+    text-align: left;
+    margin-left: 8px;
+}
+
 }
 
 
@@ -923,10 +923,16 @@ transform: rotate(360deg);
 
 .section--menu {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     padding-left: 25px;
     padding-right: 25px;
+}
+
+.container-ENTREE-PLAT-DESSERT {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .container-menu-type {
@@ -959,13 +965,10 @@ transform: rotate(360deg);
 
 /* BUTTON MENUS - PAGES RESTAURANTS - RESPONSIVE PC  */
 
-.container-button-menu {
+
+.button-menu {
     text-align: left;
-
-}
-
-.container-button-menu .button{
-    margin-left: 35px;
+    margin-left: 8px;
 }
 
 }

@@ -297,7 +297,6 @@ html {
 }
 
 
-
 /* RESTAURANTS */
 
 section {
@@ -433,7 +432,7 @@ footer {
     /* padding: 50px 30px 100px 50px; */
 }
 
-.container-logo-footer p {
+.container-logo-footer {
     font-family: 'Shrikhand', cursive;
     font-size: 20px;
     margin: 0;
@@ -478,7 +477,7 @@ footer li i {
 
     .container-location i{
        margin-left: 25px;
-     }
+    }
 
      .container-location p {
         margin-left: 18px;
@@ -525,7 +524,6 @@ footer li i {
 
     .container-etape {
         width: 28%;
-
     }
 
     /* RESTAURANTS RESPONSIVE TABLETTE */
@@ -744,7 +742,6 @@ footer li i {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-
 }
 
 .card--menu .description_heading-p p {
@@ -779,16 +776,16 @@ footer li i {
     animation: opacity-menu 2s forwards;
     opacity: 0;
 }
-.menu-card-1 {
+.animation-1 {
     animation-delay: 200ms;
 }
-.menu-card-2 {
+.animation-2 {
     animation-delay: 400ms;
 }
-.menu-card-3 {
+.animation-3 {
     animation-delay: 600ms;
 }
-.menu-card-4 {
+.animation-4 {
     animation-delay: 800ms;
 }
 

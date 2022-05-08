@@ -50,6 +50,21 @@ html {
 
 /* ANIMATION LOADER */
 
+
+.background-loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation-delay: 2500ms;
+    background-color: white;
+    animation-delay: 2500ms;
+    z-index: 98;
+    width: 100%;
+    height: 2000px;
+    animation : scale-loader 1ms forwards;
+    animation-delay: 2500ms;
+}
+
 .container-load {
     position: absolute;
     width: 100%;
@@ -57,58 +72,55 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    top:0px;
-    left: 0;
-    z-index: 0;
- 
+    top: -50px;
+    left: -50px;
+    z-index: 99;
+    animation : scale-loader 1ms forwards;
+    animation-delay: 2500ms;
 }
 
-.load {
-    position: fixed;
-    width: 80px;
-    height: 30px;
-    display: flex;
-    justify-content: space-evenly;
-    animation : opacity-loader 3000ms;
-    opacity:0;
-    
+.load__utensils {
+    position: absolute;
+    animation: loader 1800ms 1 linear;
+    transform-origin: 50px 50px;
+    opacity: 0;
 }
-
-.load__bar {
-    background-color: black;
-    height: 100%;
-    width: 7px;
-    animation: bars 500ms backwards 8 ease-in-out alternate;
-  
+.load__utensils--1 {
+    animation-delay: 300ms;
 }
-.load__bar--1 {
-    animation-delay: 200ms;
-}
-.load__bar--2 {
-    animation-delay: 400ms;
-}
-.load__bar--3 {
+.load__utensils--2 {
     animation-delay: 600ms;
 }
-.load__bar--4 {
-    animation-delay: 800ms;
+.load__utensils--3 {
+    animation-delay: 900ms;
 }
-.load__bar--5 {
-    animation-delay: 1000ms;
+.load__utensils--4 {
+    animation-delay: 1200ms;
 }
-@keyframes bars {
+.load__utensils--5 {
+    animation-delay: 1500ms;
+}
+
+.load__utensils--6 {
+    animation-delay: 1800ms;
+}
+
+@keyframes loader {
     0% {
-        transform: scaleY(0.5);
-   }
-    100% {
-        transform: scaleY(1);
-   }}
-   @keyframes opacity-loader {
-    0% {
-        opacity: 0;
-   }
-    100% {
+        transform: rotate(0deg);
         opacity: 1;
+   }
+    100% {
+        transform: rotate(360deg);
+        opacity: 1;
+   }}
+
+   @keyframes scale-loader {
+    0% {
+         scale: 1;
+   }
+    100% {
+        scale: 0.000001;
    }}
 
 
@@ -403,7 +415,7 @@ section a {
 
 .icone-heart:hover > .heart-filling {
     transform: scale(1);
-    
+
 }
 .heart-filling {
     font-size: 23px;
@@ -821,7 +833,7 @@ footer li i {
     position: absolute;
     top: 0px;
     right: -65px;
-    z-index: -1;  
+    z-index: -1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -841,7 +853,7 @@ transform: rotate(360deg);
 /* BUTTON MENUS - PAGES RESTAURANTS  */
 
 .container-button-menu {
- 
+
 }
 
 .container-button-menu .button{
@@ -851,7 +863,7 @@ transform: rotate(360deg);
 .button-menu {
     font-weight: 400;
     padding: 16px 50px 16px 50px;
-    background-color: var(--quaternaire); 
+    background-color: var(--quaternaire);
     margin: 0 auto 50px auto;
 }
 
@@ -888,11 +900,11 @@ transform: rotate(360deg);
         width: 100%;
         font-size: 14px;
     }
-    
+
     .card--menu .description_heading-p h3 {
         font-size: 14.5px;
     }
-    
+
     .card--menu .description_heading-p p{
         font-size: 14px;
     }
@@ -958,7 +970,7 @@ transform: rotate(360deg);
 
 .container-button-menu {
     text-align: left;
-  
+
 }
 
 .container-button-menu .button{

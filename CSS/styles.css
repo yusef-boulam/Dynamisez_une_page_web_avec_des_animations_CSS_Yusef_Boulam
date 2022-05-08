@@ -263,6 +263,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: var(--color-text-secondaire);
 }
 
 .container-etape p {
@@ -282,12 +283,12 @@ html {
     align-items: center;
 }
 
-.ellipsis {
+.icone-ellipsis {
     font-size: 16px;
 
 }
 
-.bars {
+.icone-bars {
     font-size: 19px;
     margin-left: 2px;
 
@@ -298,11 +299,6 @@ html {
 }
 
 
-.nombre-etape p {
-    display: block;
-    font-size: 15px;
-    color: var(--color-text-secondaire);
-}
 
 /* RESTAURANTS */
 
@@ -486,7 +482,7 @@ footer li i {
        margin-left: 25px;
      }
 
-    .container-name-cities p {
+     .container-location p {
         margin-left: 18px;
     }
 
@@ -566,15 +562,17 @@ footer li i {
 
     /* LOCALISATION RESPONSIVE PC */
 
-    .container-name-cities {
-        margin-left: 20px;
-        width: auto;
-    }
-
-    .container-name-cities p {
-        margin-left: 18px;
-    }
-
+    .container-location {
+        justify-content: left;
+     }
+ 
+     .container-location i{
+        margin-left: 25px;
+      }
+ 
+      .container-location p {
+         margin-left: 18px;
+     }
     /* H1 p Button RESPONSIVE PC */
 
     .container-H1-p-button {

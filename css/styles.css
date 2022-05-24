@@ -7,6 +7,152 @@ font-family: 'Shrikhand', cursive; */
     /* box-sizing est appliqué à tous les éléments */
 }
 
+
+/* ////////////////////////////////////ANIMATION //////////////////////////////////////////////*/
+/* ANIMATION LOADER */
+
+
+.background-loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    animation-delay: 2500ms;
+    background-color: var(--color-text-secondaire);
+    animation-delay: 2500ms;
+    z-index: 2;
+    animation: scale-loader 1ms forwards;
+    animation-delay: 2500ms;
+}
+
+.container-loader {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -50px;
+    left: -50px;
+    z-index: 3;
+    animation: scale-loader 1ms forwards;
+    animation-delay: 2500ms;
+}
+
+.loader__utensils {
+    position: absolute;
+    animation: loader 1800ms 1 linear;
+    transform-origin: 50px 50px;
+    opacity: 0;
+}
+
+.loader__utensils--1 {
+    animation-delay: 300ms;
+}
+
+.loader__utensils--2 {
+    animation-delay: 600ms;
+}
+
+.loader__utensils--3 {
+    animation-delay: 900ms;
+}
+
+.loader__utensils--4 {
+    animation-delay: 1200ms;
+}
+
+.loader__utensils--5 {
+    animation-delay: 1500ms;
+}
+
+.loader__utensils--6 {
+    animation-delay: 1800ms;
+}
+
+@keyframes loader {
+    0% {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        opacity: 1;
+    }
+}
+
+@keyframes scale-loader {
+    0% {
+        scale: 1;
+    }
+
+    100% {
+        scale: 0.000001;
+    }
+}
+
+
+
+
+/* ANIMATION CHECK MENU CARD */
+/* ANIMATION CHECK MENU CARD */
+/* ANIMATION CHECK MENU CARD */
+/* ANIMATION CHECK MENU CARD */
+/* ANIMATION CHECK MENU CARD */
+/* ANIMATION CHECK MENU CARD */
+/* ANIMATION CHECK MENU CARD */
+/* ANIMATION CHECK MENU CARD */
+/* ANIMATION CHECK MENU CARD */
+
+.card--menu {
+    overflow: hidden;
+    /* permet de masquer tout ce qui sort de la card */
+}
+
+.card--menu:hover .hover-animation-translateY-card-menu {
+    transform: translateX(-65px);
+    transition: transform 500ms;
+}
+
+.card--menu:hover .price-menu {
+    transform: translateX(-65px);
+    transition: transform 500ms;
+}
+
+/* .card--menu:hover .description_heading-p {
+    transform: scale(0.5, 1);
+    transition: transform 500ms;
+} */
+
+.hover-animation-translateY-card-menu {
+    width: 65px;
+    height: 70px;
+    background-color: var(--background-animation-hover-card-menu);
+    position: absolute;
+    top: 0px;
+    right: -65px;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hover-animation-rotate-card-menu {
+    font-size: 26px;
+    color: var(--color-text-secondaire);
+}
+
+.card--menu:hover .hover-animation-rotate-card-menu {
+    transform: rotate(360deg);
+    transition: transform 500ms;
+}
+
+
+/*/////////////////////////////////////////// GENERAL - HOME PAGE /////////////////////////////*/
+
+
 body {
     font-family: 'Roboto', sans-serif;
 }
@@ -48,83 +194,17 @@ html {
 }
 
 
-/* ANIMATION LOADER */
 
 
-.background-loader {
-    position: absolute;
-    top: 0;
-    left: 0;
-    animation-delay: 2500ms;
-    background-color: white;
-    animation-delay: 2500ms;
-    z-index: 98;
-    width: 100%;
-    height: 2000px;
-    animation : scale-loader 1ms forwards;
-    animation-delay: 2500ms;
-}
-
-.container-load {
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: -50px;
-    left: -50px;
-    z-index: 99;
-    animation : scale-loader 1ms forwards;
-    animation-delay: 2500ms;
-}
-
-.load__utensils {
-    position: absolute;
-    animation: loader 1800ms 1 linear;
-    transform-origin: 50px 50px;
-    opacity: 0;
-}
-.load__utensils--1 {
-    animation-delay: 300ms;
-}
-.load__utensils--2 {
-    animation-delay: 600ms;
-}
-.load__utensils--3 {
-    animation-delay: 900ms;
-}
-.load__utensils--4 {
-    animation-delay: 1200ms;
-}
-.load__utensils--5 {
-    animation-delay: 1500ms;
-}
-
-.load__utensils--6 {
-    animation-delay: 1800ms;
-}
-
-@keyframes loader {
-    0% {
-        transform: rotate(0deg);
-        opacity: 1;
-   }
-    100% {
-        transform: rotate(360deg);
-        opacity: 1;
-   }}
-
-   @keyframes scale-loader {
-    0% {
-         scale: 1;
-   }
-    100% {
-        scale: 0.000001;
-   }}
-
-
-/*LOGO */
+/*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO */
+/*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO */
+/*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO */
+/*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO */
+/*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO */
+/*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO */
+/*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO */
+/*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO */
+/*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO */
 
 .container-logo {
     box-shadow: 0px 4px 10px var(--box-shadow);
@@ -211,7 +291,7 @@ html {
 /* ANIMATION HOVER BUTTON  */
 
 .button:hover {
-    filter:brightness(1.1);
+    filter: brightness(1.1);
     box-shadow: 0px 8px 10px var(--box-shadow-button-darken);
 }
 
@@ -310,7 +390,7 @@ section h2 {
     position: relative;
 }
 
-.border-bottom-h2{
+.border-bottom-h2 {
     position: absolute;
     top: 17px;
     left: 1px;
@@ -392,7 +472,7 @@ section a {
     font-size: 17px;
 }
 
- .icone-heart {
+.icone-heart {
     width: 25px;
     height: 25px;
     margin: 5% 7% 0 0;
@@ -403,10 +483,11 @@ section a {
     opacity: 1;
 }
 
-.icone-heart:hover > .heart-filling {
+.icone-heart:hover>.heart-filling {
     transform: scale(1);
 
 }
+
 .heart-filling {
     font-size: 23px;
     color: var(--secondaire);
@@ -470,14 +551,14 @@ footer li i {
     /* LOCALISATION RESPONSIVE TABLETTE */
 
     .container-location {
-       justify-content: left;
+        justify-content: left;
     }
 
-    .container-location i{
-       margin-left: 25px;
+    .container-location i {
+        margin-left: 25px;
     }
 
-     .container-location p {
+    .container-location p {
         margin-left: 18px;
     }
 
@@ -558,15 +639,16 @@ footer li i {
 
     .container-location {
         justify-content: left;
-     }
- 
-     .container-location i{
+    }
+
+    .container-location i {
         margin-left: 25px;
-      }
- 
-      .container-location p {
-         margin-left: 18px;
-     }
+    }
+
+    .container-location p {
+        margin-left: 18px;
+    }
+
     /* H1 p Button RESPONSIVE PC */
 
     .container-H1-p-button {
@@ -641,6 +723,12 @@ footer li i {
 
 
 /* ///////////////////////// PAGES RESTAURANTS //////////////////////*/
+/* ///////////////////////// PAGES RESTAURANTS //////////////////////*/
+/* ///////////////////////// PAGES RESTAURANTS //////////////////////*/
+/* ///////////////////////// PAGES RESTAURANTS //////////////////////*/
+/* ///////////////////////// PAGES RESTAURANTS //////////////////////*/
+/* ///////////////////////// PAGES RESTAURANTS //////////////////////*/
+
 
 
 /* LOGO ET RETOUR - PAGES RESTAURANTS */
@@ -745,7 +833,8 @@ footer li i {
     margin: 6px 0 0 0;
     font-weight: 399;
     font-size: 14.5px;
-    width: 97%;;
+    width: 97%;
+    ;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -766,76 +855,43 @@ footer li i {
     font-size: 15px;
 }
 
-/* ANIMATION TRANSLATE Y MENU CARD */
+/* ANIMATION APPARITION PROGRESSIVE DES PLATS - MENU CARD */
 
 
 .card--menu {
     animation: opacity-menu 2s forwards;
     opacity: 0;
 }
+
 .animation-1 {
     animation-delay: 200ms;
 }
+
 .animation-2 {
     animation-delay: 400ms;
 }
+
 .animation-3 {
     animation-delay: 600ms;
 }
+
 .animation-4 {
     animation-delay: 800ms;
 }
 
 
-   @keyframes opacity-menu {
+@keyframes opacity-menu {
     0% {
         opacity: 0;
         transform: translateY(40px);
-   }
+    }
+
     100% {
         opacity: 1;
         transform: translateY(0);
-   }}
-
-
-   /* ANIMATION CHECK MENU CARD */
-
-   .card--menu {
-       overflow: hidden;
-   }
-
-   .card--menu:hover .hover-animation-translateY-card-menu {
-       transform: translateX(-65px);
-       transition: transform 500ms;
-   }
-
-   .card--menu:hover .price-menu {
-    transform: translateX(-65px);
-    transition: transform 500ms;
+    }
 }
 
-.hover-animation-translateY-card-menu {
-    width: 65px;
-    height: 70px;
-    background-color: var(--background-animation-hover-card-menu);
-    position: absolute;
-    top: 0px;
-    right: -65px;
-    z-index: -1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.hover-animation-rotate-card-menu {
- font-size: 26px;
- color: var(--color-text-secondaire);
-}
-
-.card--menu:hover .hover-animation-rotate-card-menu {
-transform: rotate(360deg);
-    transition: transform 500ms;
-}
 
 
 /* BUTTON MENUS - PAGES RESTAURANTS  */
@@ -857,11 +913,11 @@ transform: rotate(360deg);
 @media screen and (min-width: 768px) and (max-width: 991px) {
 
 
-/* MENUS - PAGES RESTAURANTS - RESPONSIVE TABLETTE  */
+    /* MENUS - PAGES RESTAURANTS - RESPONSIVE TABLETTE  */
 
     .section--menu {
         padding-left: 20px;
-        padding-right:  20px;
+        padding-right: 20px;
     }
 
     .section--menu .container-cards {
@@ -878,7 +934,7 @@ transform: rotate(360deg);
     }
 
 
-    .card--menu .description_heading-p{
+    .card--menu .description_heading-p {
         width: 100%;
         font-size: 14px;
     }
@@ -887,7 +943,7 @@ transform: rotate(360deg);
         font-size: 14.5px;
     }
 
-    .card--menu .description_heading-p p{
+    .card--menu .description_heading-p p {
         font-size: 14px;
     }
 
@@ -895,17 +951,18 @@ transform: rotate(360deg);
         align-self: baseline;
         margin-top: 5px;
     }
-    .price-menu P{
-    margin: 0;
+
+    .price-menu P {
+        margin: 0;
     }
 
 
-/* BUTTON MENUS - PAGES RESTAURANTS - RESPONSIVE TABLETTE  */
-    
-.button-menu {
-    text-align: left;
-    margin-left: 8px;
-}
+    /* BUTTON MENUS - PAGES RESTAURANTS - RESPONSIVE TABLETTE  */
+
+    .button-menu {
+        text-align: left;
+        margin-left: 8px;
+    }
 
 }
 
@@ -919,57 +976,56 @@ transform: rotate(360deg);
 
 
 
-/* MENUS - PAGES RESTAURANTS - RESPONSIVE PC  */
+    /* MENUS - PAGES RESTAURANTS - RESPONSIVE PC  */
 
-.section--menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding-left: 25px;
-    padding-right: 25px;
+    .section--menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .container-ENTREE-PLAT-DESSERT {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .container-menu-type {
+        width: 32%;
+    }
+
+
+    .section--menu .container-cards {
+        flex-direction: column;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .card--menu {
+        width: 100%;
+    }
+
+    .card--menu .card_description {
+        min-width: 305px;
+    }
+
+    .card--menu .description_heading-p h3 {
+        font-size: 15px;
+    }
+
+    .card--menu .description_heading-p {
+        font-size: 14px;
+    }
+
+    /* BUTTON MENUS - PAGES RESTAURANTS - RESPONSIVE PC  */
+
+
+    .button-menu {
+        text-align: left;
+        margin-left: 8px;
+    }
+
 }
-
-.container-ENTREE-PLAT-DESSERT {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.container-menu-type {
-    width: 32%;
-}
-
-
-.section--menu .container-cards{
-    flex-direction: column;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.card--menu{
-    width: 100%;
-}
-
-.card--menu .card_description{
-    min-width: 305px;
-}
-
-.card--menu .description_heading-p h3 {
-    font-size: 15px;
-}
-
-.card--menu .description_heading-p {
-    font-size: 14px;
-}
-
-/* BUTTON MENUS - PAGES RESTAURANTS - RESPONSIVE PC  */
-
-
-.button-menu {
-    text-align: left;
-    margin-left: 8px;
-}
-
-}
-

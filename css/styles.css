@@ -9,7 +9,9 @@ font-family: 'Shrikhand', cursive; */
 
 
 /* ////////////////////////////////////ANIMATION //////////////////////////////////////////////*/
-/* ANIMATION LOADER */
+
+
+/* ///////////////////////////////////ANIMATION LOADER ///////////////////////////////////*/
 
 
 .background-loader {
@@ -94,17 +96,78 @@ font-family: 'Shrikhand', cursive; */
 }
 
 
+/* /////////////////////////// ANIMATION HOVER BUTTON  ///////////////////////////*/
+
+.button:hover {
+    filter: brightness(1.1);
+    box-shadow: 0px 8px 10px var(--box-shadow-button-darken);
+}
 
 
-/* ANIMATION CHECK MENU CARD */
-/* ANIMATION CHECK MENU CARD */
-/* ANIMATION CHECK MENU CARD */
-/* ANIMATION CHECK MENU CARD */
-/* ANIMATION CHECK MENU CARD */
-/* ANIMATION CHECK MENU CARD */
-/* ANIMATION CHECK MENU CARD */
-/* ANIMATION CHECK MENU CARD */
-/* ANIMATION CHECK MENU CARD */
+
+/* ///////////////////////////  ANIMATION HEART FILLING  /////////////////////////// */
+
+.icone-heart:hover>.heart-filling {
+    transform: scale(1);
+
+}
+
+.heart-filling {
+    font-size: 23px;
+    color: var(--secondaire);
+    margin-bottom: 1rem;
+    transform: scale(0.01);
+    transition: transform 1000ms;
+    position: absolute;
+    top: 2px;
+    right: 0;
+    bottom: 0;
+    left: 1px;
+    opacity: 1;
+    z-index: -1;
+}
+
+
+/*///////////////////////////  ANIMATION APPARITION PROGRESSIVE DES PLATS - MENU CARD /////////////////////////// */
+
+
+.card--menu {
+    animation: opacity-menu 2s forwards;
+    opacity: 0;
+}
+
+.animation-1 {
+    animation-delay: 200ms;
+}
+
+.animation-2 {
+    animation-delay: 400ms;
+}
+
+.animation-3 {
+    animation-delay: 600ms;
+}
+
+.animation-4 {
+    animation-delay: 800ms;
+}
+
+
+@keyframes opacity-menu {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+/* ///////////////////////////  ANIMATION CHECK MENU CARD  /////////////////////////// */
 
 .card--menu {
     overflow: hidden;
@@ -194,17 +257,7 @@ html {
 }
 
 
-
-
-/*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO */
-/*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO */
-/*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO */
-/*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO */
-/*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO */
-/*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO */
-/*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO */
-/*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO */
-/*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO *//*LOGO */
+/*LOGO */
 
 .container-logo {
     box-shadow: 0px 4px 10px var(--box-shadow);
@@ -288,12 +341,6 @@ html {
     z-index: 1;
 }
 
-/* ANIMATION HOVER BUTTON  */
-
-.button:hover {
-    filter: brightness(1.1);
-    box-shadow: 0px 8px 10px var(--box-shadow-button-darken);
-}
 
 
 /* FONCTIONNEMENT   */
@@ -483,25 +530,6 @@ section a {
     opacity: 1;
 }
 
-.icone-heart:hover>.heart-filling {
-    transform: scale(1);
-
-}
-
-.heart-filling {
-    font-size: 23px;
-    color: var(--secondaire);
-    margin-bottom: 1rem;
-    transform: scale(0.01);
-    transition: transform 1000ms;
-    position: absolute;
-    top: 2px;
-    right: 0;
-    bottom: 0;
-    left: 1px;
-    opacity: 1;
-    z-index: -1;
-}
 
 /* FOOTER */
 
@@ -586,7 +614,7 @@ footer li i {
     }
 
 
-    /* Fonctionnement RESPONSIVE TABLETTE */
+    /* FONCTIONNEMENT RESPONSIVE TABLETTE */
 
     .container-fonctionnement {
         height: auto;
@@ -673,7 +701,7 @@ footer li i {
     }
 
 
-    /* Fonctionnement RESPONSIVE PC */
+    /* FONCTIONNEMENT RESPONSIVE PC */
 
     .container-fonctionnement {
         height: auto;
@@ -855,42 +883,6 @@ footer li i {
     font-size: 15px;
 }
 
-/* ANIMATION APPARITION PROGRESSIVE DES PLATS - MENU CARD */
-
-
-.card--menu {
-    animation: opacity-menu 2s forwards;
-    opacity: 0;
-}
-
-.animation-1 {
-    animation-delay: 200ms;
-}
-
-.animation-2 {
-    animation-delay: 400ms;
-}
-
-.animation-3 {
-    animation-delay: 600ms;
-}
-
-.animation-4 {
-    animation-delay: 800ms;
-}
-
-
-@keyframes opacity-menu {
-    0% {
-        opacity: 0;
-        transform: translateY(40px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 
 
 

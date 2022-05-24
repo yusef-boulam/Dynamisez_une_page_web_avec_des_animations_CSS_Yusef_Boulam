@@ -14,32 +14,33 @@ font-family: 'Shrikhand', cursive; */
 /* ///////////////////////////////////ANIMATION LOADER ///////////////////////////////////*/
 
 
-.background-loader {
+.background-page {
     position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-    animation-delay: 2500ms;
     background-color: var(--color-text-secondaire);
-    animation-delay: 2500ms;
-    z-index: 2;
-    animation: scale-loader 1ms forwards;
-    animation-delay: 2500ms;
+    z-index: -101;
+    animation: scale-loader 3000ms forwards;
+    /* animation-delay: 2500ms; */
 }
 
 .container-loader {
-    position: absolute;
-    width: 100%;
-    height: 100vh;
+    /* position: absolute; */
+    /* top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0; */
     display: flex;
     justify-content: center;
     align-items: center;
-    top: -50px;
-    left: -50px;
-    z-index: 3;
-    animation: scale-loader 1ms forwards;
-    animation-delay: 2500ms;
+    width: 100%;
+    height: 100vh;
+    /* transform-origin: -50px -50px; */
+    /* z-index: 100; */
+    /* animation: scale-loader 1ms forwards;
+    animation-delay: 2500ms; */
 }
 
 .loader__utensils {
@@ -87,13 +88,20 @@ font-family: 'Shrikhand', cursive; */
 
 @keyframes scale-loader {
     0% {
-        scale: 1;
+        z-index: 200;
+        opacity: 1;
     }
 
+    92% {
+        z-index: 200;
+        opacity: 1;
+    } 
+
     100% {
-        scale: 0.000001;
-    }
-}
+        z-index: -100;
+        opacity: 0;
+    } 
+}      
 
 
 /* /////////////////////////// ANIMATION HOVER BUTTON  ///////////////////////////*/
@@ -568,7 +576,7 @@ footer li i {
     font-size: 12px;
 }
 
-/* ///////////////////////////////////RESPONSIVE TABLETTE/////////////////////////////////////// */
+/* ///////////////////////////////// RESPONSIVE TABLETTE - HOME PAGE /////////////////////////////////////// */
 /* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 768px et 992px (tablette) */
 /*  @media all and (min-width: 768px) and (max-width: 992px) */
 /* RESPONSIVE TABLETTE */
@@ -594,7 +602,6 @@ footer li i {
 
     .container-H1-p-button {
         text-align: left;
-        align-items: left;
         width: 100%;
     }
 
@@ -658,7 +665,7 @@ footer li i {
 }
 
 
-/* ///////////////////////////////////RESPONSIVE PC/////////////////////////////////////// */
+/* ///////////////////////////////////RESPONSIVE PC - HOME PAGE/////////////////////////////////////// */
 /* Sur les écrans, quand la largeur de la fenêtre fait au maximum 767px (telephone portable)*/
 
 @media screen and (min-width: 992px) {
@@ -681,7 +688,6 @@ footer li i {
 
     .container-H1-p-button {
         text-align: left;
-        align-items: left;
         width: 100%;
     }
 
@@ -882,8 +888,6 @@ footer li i {
     font-weight: 401;
     font-size: 15px;
 }
-
-
 
 
 /* BUTTON MENUS - PAGES RESTAURANTS  */

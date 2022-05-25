@@ -23,24 +23,14 @@ font-family: 'Shrikhand', cursive; */
     background-color: var(--color-text-secondaire);
     z-index: -101;
     animation: scale-loader 3000ms forwards;
-    /* animation-delay: 2500ms; */
 }
 
 .container-loader {
-    /* position: absolute; */
-    /* top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0; */
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100vh;
-    /* transform-origin: -50px -50px; */
-    /* z-index: 100; */
-    /* animation: scale-loader 1ms forwards;
-    animation-delay: 2500ms; */
 }
 
 .loader__utensils {
@@ -95,13 +85,13 @@ font-family: 'Shrikhand', cursive; */
     92% {
         z-index: 200;
         opacity: 1;
-    } 
+    }
 
     100% {
         z-index: -100;
         opacity: 0;
-    } 
-}      
+    }
+}
 
 
 /* /////////////////////////// ANIMATION HOVER BUTTON  ///////////////////////////*/
@@ -192,10 +182,10 @@ font-family: 'Shrikhand', cursive; */
     transition: transform 500ms;
 }
 
-/* .card--menu:hover .description_heading-p {
+.card--menu:hover .description_heading-p {
     transform: scale(0.5, 1);
     transition: transform 500ms;
-} */
+}
 
 .hover-animation-translateY-card-menu {
     width: 65px;
@@ -654,12 +644,7 @@ footer li i {
 
     /* FOOTER RESPONSIVE TABLETTE */
 
-    footer ul {
-        display: flex;
-        width: 60%;
-        max-width: 450px;
-        justify-content: space-between;
-    }
+
 
 
 }
@@ -741,16 +726,25 @@ footer li i {
 
     /* FOOTER RESPONSIVE PC */
 
+    footer {
+        padding-top: 34px;
+    }
+
     footer ul {
         display: flex;
         width: 100%;
         justify-content: space-around;
     }
 
+    footer li {
+      margin: 0;
+    }
+
     .container-two-link {
         width: 50%;
         display: flex;
         justify-content: space-around;
+        margin: 0;
     }
 
 }

@@ -184,7 +184,6 @@ font-family: 'Shrikhand', cursive; */
 
 .card--menu:hover .description_heading-p {
   width: 66%;
-  
 }
 
 .hover-animation-translateY-card-menu {
@@ -644,7 +643,11 @@ footer li i {
 
     /* FOOTER RESPONSIVE TABLETTE */
 
-
+.container-logo-liens-footer ul {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: auto ;
+} 
 
 
 }

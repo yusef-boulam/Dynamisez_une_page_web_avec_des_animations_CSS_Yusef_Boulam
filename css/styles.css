@@ -183,8 +183,8 @@ font-family: 'Shrikhand', cursive; */
 }
 
 .card--menu:hover .description_heading-p {
-    transform: scale(0.5, 1);
-    transition: transform 500ms;
+  width: 66%;
+  
 }
 
 .hover-animation-translateY-card-menu {

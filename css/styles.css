@@ -175,20 +175,23 @@ font-family: 'Shrikhand', cursive; */
 .card--menu:hover .hover-animation-translateY-card-menu {
     transform: translateX(-65px);
     transition: transform 500ms;
+     /* translation à gauche de l'animation */
 }
 
 .card--menu:hover .price-menu {
     transform: translateX(-65px);
     transition: transform 500ms;
+       /* translation à gauche du prix */
 }
 
 .card--menu:hover .description_heading-p {
   width: 66%;
+     /* reduction du texte de la card au survol */
 }
 
 .hover-animation-translateY-card-menu {
     width: 65px;
-    height: 70px;
+    height: 72px;
     background-color: var(--background-animation-hover-card-menu);
     position: absolute;
     top: 0px;
@@ -197,16 +200,19 @@ font-family: 'Shrikhand', cursive; */
     display: flex;
     justify-content: center;
     align-items: center;
+     /* animation caché à droite de la card */
 }
 
 .hover-animation-rotate-card-menu {
     font-size: 26px;
     color: var(--color-text-secondaire);
+        /* logo de l'animation */
 }
 
 .card--menu:hover .hover-animation-rotate-card-menu {
     transform: rotate(360deg);
     transition: transform 500ms;
+      /* rotation du logo de l'animation */
 }
 
 

@@ -20,51 +20,57 @@ font-family: 'Shrikhand', cursive; */
     left: 0;
     bottom: 0;
     right: 0;
+     /* je positionne le backgorund pour qu'il prenne l'intégralité de la page */
     background-color: var(--color-text-secondaire);
     z-index: -101;
-    animation: scale-loader 3000ms forwards;
+    animation: animation-background 3000ms forwards;
+     /* animation dure 3s et 
+     "forwards = garde les propriété de fin d'animation" */
+
 }
 
 .container-loader {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100vh;
+    height: 100vh; 
+     /* je centre le loader sur le view page */
 }
 
 .loader__utensils {
     position: absolute;
-    animation: loader 1800ms 1 linear;
+     animation: animation-loader 1800ms linear; 
     transform-origin: 50px 50px;
     opacity: 0;
+    /* définit le comportements de mes utensils dans l'animations
+       "1800ms = donne le temps à chaque utensils pour réaliser le tour"
+       "linear = annule l acceleration et la desceleration"
+       "transform-origin = permet de créer le rayon de mon cercle"
+       "opacity = laisse invisible les utensils au départ" */
 }
 
+    /* je crée le décalage dans le démarrage de chaque utensils */
 .loader__utensils--1 {
     animation-delay: 300ms;
 }
-
 .loader__utensils--2 {
     animation-delay: 600ms;
 }
-
 .loader__utensils--3 {
     animation-delay: 900ms;
 }
-
 .loader__utensils--4 {
     animation-delay: 1200ms;
 }
-
 .loader__utensils--5 {
     animation-delay: 1500ms;
 }
-
 .loader__utensils--6 {
     animation-delay: 1800ms;
 }
 
-@keyframes loader {
+/* animation du loader */
+@keyframes animation-loader {
     0% {
         transform: rotate(0deg);
         opacity: 1;
@@ -74,9 +80,11 @@ font-family: 'Shrikhand', cursive; */
         transform: rotate(360deg);
         opacity: 1;
     }
+     /* opacity = les rends visible uniquement pendant l'animation*/
 }
 
-@keyframes scale-loader {
+/* animation pour le background */
+@keyframes animation-background {
     0% {
         z-index: 200;
         opacity: 1;
@@ -91,6 +99,11 @@ font-family: 'Shrikhand', cursive; */
         z-index: -100;
         opacity: 0;
     }
+     /* "z-index = on passe au premier plan le background et le loader (enfant)
+              et on remet tout en arrière plan à la fin de l'animation"
+    "opacity = vu qu'on à placé un forwards sur l'animation on doit remettre 
+              l'opacité à 0 en fin d'animation, sinon elle va rester à 1."
+              */
 }
 
 

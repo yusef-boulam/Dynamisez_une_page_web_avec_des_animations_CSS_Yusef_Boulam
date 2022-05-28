@@ -202,24 +202,36 @@ font-family: 'Shrikhand', cursive; */
 
 /* ///////////////////////////  ANIMATION HEART FILLING  /////////////////////////// */
 
-.icone-heart:hover>.heart-filling {
-    transform: scale(1);
 
-}
-
+/* "on crée un deuxième coeur et on lui donne avec SCALE une taille TOUTE PETITE (0.01) pour q'il ne soit pas visible" */
 .heart-filling {
     font-size: 23px;
     color: var(--secondaire);
     margin-bottom: 1rem;
+                /* "on lui donne une taille légérement plus petite que le premier coeur
+                et on ajuste car ce deuxième coeur va servir uniquement
+                au remplissage du premier*/
     transform: scale(0.01);
     transition: transform 1000ms;
+            /* "les caractéristiques de l'animation:
+                 taille initiale et la durée de l'animation;*/
     position: absolute;
     top: 2px;
     right: 0;
     bottom: 0;
     left: 1px;
+        /* "on le superpose au premier coeur avec absolute
+            et on corrige légérement son positionnement en testant visuellement" */
     opacity: 1;
     z-index: -1;
+            /* "on le place à l'arrière car c'est un remplissage du prmier coeur*/
+
+}
+
+.icone-heart:hover>.heart-filling {
+    transform: scale(1);
+       /* "l'élément d'éclancheur de l'animation et sa taille finale*/
+
 }
 
 

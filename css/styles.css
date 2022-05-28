@@ -952,12 +952,14 @@ footer li i {
 
     .section--menu .container-cards {
             display: grid;
-            grid-template-columns: repeat(2, auto);
+            grid-template-columns: repeat(2, 50%);
             grid-template-rows: auto ;
+                /* utilisation du grid pour la version tablette pour
+                séparer toutes les cards en DEUX COLONNES  */
         }
 
     .card--menu {
-        width: 32%;
+        width: 95%;
         min-width: 353px;
     }
 

@@ -48,6 +48,7 @@ font-family: 'Shrikhand', cursive; */
     opacity: 0;
     /* définit le comportements de mes utensils dans l'animations
        "1800ms = donne le temps à chaque utensils pour réaliser le tour"
+       " 1 = les ustensils ne font qu'un seul tour puis disparaissent"
        "linear = annule l acceleration et la desceleration"
        "transform-origin = permet de créer le rayon de mon cercle"
        "opacity = laisse invisible les utensils au départ" */

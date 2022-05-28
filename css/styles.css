@@ -43,7 +43,7 @@ font-family: 'Shrikhand', cursive; */
 
 .loader__utensils {
     position: absolute;
-     animation: animation-loader 1800ms linear; 
+     animation: animation-loader 1800ms 1 linear; 
     transform-origin: 50px 50px;
     opacity: 0;
     /* définit le comportements de mes utensils dans l'animations

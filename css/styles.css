@@ -30,6 +30,10 @@ font-family: 'Shrikhand', cursive; */
 }
 
 .container-loader {
+    position: relative;
+    top: -50px;
+    left: -50px;
+       /* on décale de -50px pour compenser le transform origin et garder l'animation centrée */
     display: flex;
     justify-content: center;
     align-items: center;

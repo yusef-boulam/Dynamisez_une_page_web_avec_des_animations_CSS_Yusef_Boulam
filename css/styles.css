@@ -239,7 +239,9 @@ font-family: 'Shrikhand', cursive; */
 
 .button:hover {
     filter: brightness(1.1);
+     /* "on éclarcit le boutton*/
     box-shadow: 0px 8px 10px var(--box-shadow-button-darken);
+        /* "on prononce plus son ombre*/
 }
 
 

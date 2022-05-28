@@ -111,77 +111,6 @@ font-family: 'Shrikhand', cursive; */
 }
 
 
-/* /////////////////////////// ANIMATION HOVER BUTTON  ///////////////////////////*/
-
-.button:hover {
-    filter: brightness(1.1);
-    box-shadow: 0px 8px 10px var(--box-shadow-button-darken);
-}
-
-
-
-/* ///////////////////////////  ANIMATION HEART FILLING  /////////////////////////// */
-
-.icone-heart:hover>.heart-filling {
-    transform: scale(1);
-
-}
-
-.heart-filling {
-    font-size: 23px;
-    color: var(--secondaire);
-    margin-bottom: 1rem;
-    transform: scale(0.01);
-    transition: transform 1000ms;
-    position: absolute;
-    top: 2px;
-    right: 0;
-    bottom: 0;
-    left: 1px;
-    opacity: 1;
-    z-index: -1;
-}
-
-
-/*///////////////////////////  ANIMATION APPARITION PROGRESSIVE DES PLATS - MENU CARD /////////////////////////// */
-
-
-.card--menu {
-    animation: opacity-menu 2s forwards;
-    opacity: 0;
-}
-
-.animation-1 {
-    animation-delay: 200ms;
-}
-
-.animation-2 {
-    animation-delay: 400ms;
-}
-
-.animation-3 {
-    animation-delay: 600ms;
-}
-
-.animation-4 {
-    animation-delay: 800ms;
-}
-
-
-@keyframes opacity-menu {
-    0% {
-        opacity: 0;
-        transform: translateY(40px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-
-
 /* ///////////////////////////  ANIMATION CHECK MENU CARD  /////////////////////////// */
 
 .card--menu {
@@ -231,6 +160,76 @@ font-family: 'Shrikhand', cursive; */
     transition: transform 500ms;
       /* rotation du logo de l'animation */
 }
+
+
+/*///////////////////////////  ANIMATION APPARITION PROGRESSIVE DES PLATS - MENU CARD /////////////////////////// */
+
+
+.card--menu {
+    animation: apparition-menu 2s forwards;
+    opacity: 0;
+      /* "2s = durée de l'animation"
+         "forwards = garde les propriété de fin d'animation" */
+}
+
+ /* "décalage de l'arrivé des card menu sur la page à l'actualisation" */
+.animation-1 {
+    animation-delay: 200ms;
+}
+.animation-2 {
+    animation-delay: 400ms;
+}
+.animation-3 {
+    animation-delay: 600ms;
+}
+.animation-4 {
+    animation-delay: 800ms;
+}
+
+ /* "la carte apparait progessivement en se mettant à sa place définitive" */
+@keyframes apparition-menu {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* ///////////////////////////  ANIMATION HEART FILLING  /////////////////////////// */
+
+.icone-heart:hover>.heart-filling {
+    transform: scale(1);
+
+}
+
+.heart-filling {
+    font-size: 23px;
+    color: var(--secondaire);
+    margin-bottom: 1rem;
+    transform: scale(0.01);
+    transition: transform 1000ms;
+    position: absolute;
+    top: 2px;
+    right: 0;
+    bottom: 0;
+    left: 1px;
+    opacity: 1;
+    z-index: -1;
+}
+
+
+/* /////////////////////////// ANIMATION HOVER BUTTON  ///////////////////////////*/
+
+.button:hover {
+    filter: brightness(1.1);
+    box-shadow: 0px 8px 10px var(--box-shadow-button-darken);
+}
+
 
 
 /*/////////////////////////////////////////// GENERAL - HOME PAGE /////////////////////////////*/

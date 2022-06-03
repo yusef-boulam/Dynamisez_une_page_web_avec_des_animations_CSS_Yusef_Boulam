@@ -121,7 +121,7 @@ font-family: 'Shrikhand', cursive; */
 
 .hover-animation-translateY-card-menu {
     width: 65px;
-    height: 74px;
+    height: 100%;
     background-color: var(--background-animation-hover-card-menu);
     position: absolute;
     top: 0px;

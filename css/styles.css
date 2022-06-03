@@ -119,6 +119,21 @@ font-family: 'Shrikhand', cursive; */
     /* permet de masquer tout ce qui sort de la card */
 }
 
+.hover-animation-translateY-card-menu {
+    width: 65px;
+    height: 74px;
+    background-color: var(--background-animation-hover-card-menu);
+    position: absolute;
+    top: 0px;
+    right: -65px;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     /* animation caché à droite de la card */
+}
+
+
 .card--menu:hover .hover-animation-translateY-card-menu {
     transform: translateX(-65px);
     transition: transform 500ms;
@@ -134,20 +149,6 @@ font-family: 'Shrikhand', cursive; */
 .card--menu:hover .description_heading-p {
   width: 66%;
      /* reduction du texte de la card au survol */
-}
-
-.hover-animation-translateY-card-menu {
-    width: 65px;
-    height: 74px;
-    background-color: var(--background-animation-hover-card-menu);
-    position: absolute;
-    top: 0px;
-    right: -65px;
-    z-index: -1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-     /* animation caché à droite de la card */
 }
 
 .hover-animation-rotate-card-menu {
@@ -872,6 +873,11 @@ footer li i {
     font-size: 17px;
     font-weight: 385;
     margin-top: 27px;
+}
+
+.section--menu button {
+    border: none;
+    cursor: pointer;
 }
 
 .card--menu {
